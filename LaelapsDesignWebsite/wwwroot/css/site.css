@@ -1,0 +1,324 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification\ 
+for details on configuring this project to bundle and minify static web assets. */
+body {
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+a {
+    color: #0085bd;
+    text-decoration: none
+}
+a:hover {
+    color: #60a5dd;
+    text-decoration: none
+}
+a:focus {
+    outline: thin dotted
+}
+a:hover, a:active {
+    outline: 0
+}
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.pic-full {
+    max-width: 100%;
+    height: auto;
+}
+.width-full {
+    width: 100% !important;
+}
+.headerWrapper{
+    position:fixed;
+    width:100%;
+    bottom:20px;
+    background-color:rgba(17,17,17,0.7);
+}
+#header{
+    padding:30px 0px;    
+}
+.logoContent {
+    
+    background-attachment: scroll;
+    background-image: url(../images/Home/logo.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: left;
+    min-height:70px;
+
+}
+#topNav nav {
+    position: relative;
+    bottom: -3px;
+    margin-top: 0;
+    float: left
+}
+#topNav nav li {
+    display: inline-block;
+    margin-right: 30px;
+    position: relative;
+    text-align: right
+}
+#topNav .main-nav a:hover {
+    color: #fff
+}
+#topNav .main-nav a,#topNav .main-nav a:visited {
+    color: #aaa
+}
+#topNav nav li a:hover {
+    color: #000
+}
+pre, ul, ol, dl {
+    font-family: "Helvetica",arial,sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1.6em;
+    letter-spacing: 0px;
+    margin: 1em 0
+}
+/* Carousel */
+.carousel-caption p {
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+/* Make .svg files in the carousel display properly in older browsers */
+.carousel-inner .item img[src$=".svg"] {
+    width: 100%;
+}
+
+/* QR code generator */
+#qrCode {
+    margin: 15px;
+}
+
+/* Hide/rearrange for smaller screens */
+@media screen and (max-width: 767px) {
+    /* Hide captions */
+    .carousel-caption {
+        display: none;
+    }
+}
+
+/*Courses Page*/
+.content-inner {
+    padding: 20px 8% 100px
+}
+.pic-inner {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.pic {
+    max-width: 90%;
+    height: auto;
+}
+
+/*About Page*/
+#about-header, section {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    position: relative
+}
+#about-header {
+    background-attachment: scroll;
+    background-image: url(../images/pic1.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+#content{
+    margin-top:5px;
+}
+.my-xl-6 {
+    margin-top: 4.5rem !important;
+    margin-bottom: 4.5rem !important
+}
+.secondary-navbar {
+    z-index: 600;
+    border: none;
+    min-height: 50px;
+}
+
+
+.position-sticky {
+    top: 50px;
+    position: sticky;
+}
+.font-weight-bold {
+    font-weight: 700
+}
+@media (min-width:992px){ 
+    .d-md-flex {
+    display: flex !important;
+    }
+}
+.about-school-bg {
+    margin: 0;
+    background: url(../images/About/Laelaps_Location.jpg) no-repeat 50% center;
+    background-size: cover;
+    min-height: 505px;
+}
+.px-0 {
+    padding-right: 0px !important;
+}
+.px-lg-6 {
+    padding-left: 4.5rem !important;
+}
+.mt-5 {
+    margin-top: 3rem !important;
+}
+.divcss {
+    word-wrap: break-word
+}
+.text_card {
+    font-family: News706BT-RomanC,Georgia,Times New Roman,Times,serif;
+    letter-spacing: .01em;
+    line-height:27px;
+}
+.font-size-16 {
+    font-size: 16px !important
+}
+.over_content {
+    display: flex
+}
+.over_content-centered {
+    justify-content: center
+}
+.content-img {
+    /*max-width: 50%;*/
+    height: 150px;
+}
+
+/*Courses*/
+.pic-courses {
+    /*max-width: 100%;*/
+    height: 200px;
+}
+.div-relative {
+    position: relative;
+    overflow:hidden;
+    min-height: 160px;
+}
+.div-child{
+    position:absolute;
+}
+.div-child-text {
+    position: absolute;
+    top: 50%;
+    color: aliceblue;
+    font-size: 14px;
+    font-family: Titillium Web;
+    text-shadow:2px 2px 4px #2f2d2d;
+}
+.page-title{
+    color:#605c5c;
+    font-size:48px;
+    font-weight:600;
+    font-style:normal;
+}
+
+/*GALLERY*/
+.OrangeCallout {
+    padding: 15px 22px 15px 22px;
+    background-color: #ffffff;
+    border-left: solid 1px #ff9900;
+    border-right: solid 1px #ff9900;
+    border-bottom: solid 1px #ff9900;
+    font-size: 12px;
+    color: #cc6600;
+    font-family: Lucida Grande, Arial
+}
+.OrangeCallout2 {
+    padding: 15px 22px 15px 22px;
+    background-color: #ffffff;
+    border-left: solid 1px #0ed145;
+    border-right: solid 1px #0ed145;
+    border-bottom: solid 1px #0ed145;
+    font-size: 12px;
+    color: #0ed145;
+    font-family: Lucida Grande, Arial
+}
+.Gallery-link {
+    display: block;
+    color: #605c5c;
+    font-size: 22px;
+    font-weight: 400;
+    font-style: normal;
+    margin-top:20px;
+    margin-bottom:20px
+}
+.Gallery-content-img {
+    height: 200px;
+}
+
+/*Contact*/
+.Contact-Top {
+    margin-top: 60px;
+}
+
+.Contact-block{
+    width:285px;
+}
+.line-block {
+    margin-top:10px;
+    margin-bottom:10px;
+}
+.line-block .line {
+    border-bottom: solid 1px #dcdcdc;
+}
+.require-star{
+    color:red;
+    margin-left:3px;
+}
+
+/*PORTFOLIO-PREP*/
+.Portfooio-title {
+    font-family: "Source Sans Pro";
+    font-size:60px;
+    font-weight:200;
+}
+.Portfooio-Center {
+    margin-top: 20px;
+}
+.Portfooio-text-list {
+    font-family: "Source Sans Pro";
+    letter-spacing: .01em;
+    font-size: 16px;
+    line-height: 27px;
+    font-weight: 700;
+    padding-right: 10px;
+    padding-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    word-wrap: break-word
+}
+.Portfooio-table{
+    min-height:80px;
+}
+.field-validation-error {
+    color: red;
+}
+
+.Portfooio-school-title {
+    font-family: "Source Sans Pro";
+    font-size: 32px;
+    font-weight: 400;
+    font-style: normal;
+}
+.Portfooio-img{
+    margin:5px;
+}
+.Portfooio-content-img {
+    height:100px;
+}
+
+/*Home*/
+
+
+
+
+

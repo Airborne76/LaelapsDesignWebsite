@@ -1,0 +1,73 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+<br />
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="center-block">
+                <h1 class="page-title text-center">Portfolio Preparation Program</h1>
+            </div>
+        </div>
+    </div>
+</section>
+
+<p class="divcss text_card font-size-16">
+    Portfolio is always the single most important aspect of your application demonstrating your technical
+    skills, creativity, and individual growth. Laelaps understands the importance of art education you pursue
+    to your life and assists you to break through the learning barriers and boost your potential. Our portfolio
+    preparation program helps prospective students matriculate to top-ranking colleges in the U.S. and Canada.
+</p>
+<p class="divcss text_card font-size-16">
+    A wealth of counseling and coaching experiences from tons of our successful cases guarantee your
+    excellence and success. All of our counselors are celebrated professionals in their areas of expertise,
+    devoted to providing you the guidance and support you need to achieve admissions and scholarship
+    success. They will not only help to develop and review your portfolio but also guide you through the
+    application process, answer your questions, and serve as your admissions mentors.
+</p>
+<p class="divcss text_card font-size-16">
+    We build abridge to the future by leveraging the experience and capabilities of our talented team in the
+    best possible way to serve students and never disappoint you! If you want to realize your dream, you
+    are in the right place.
+</p>
+<p class="divcss text_card font-size-16 Portfooio-Center">
+    Your portfolio must be oriented specifically to the one major for which you are applying amongst:
+</p>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-6 col-sm-4 col-md-2 Portfooio-table"><p class="divcss Portfooio-text-list">•Entertainment Design </p></div>
+            <div class="col-xs-6 col-sm-4 col-md-2 Portfooio-table"><p class="divcss Portfooio-text-list">•Advertising</p></div>
+            <div class="col-xs-6 col-sm-4 col-md-2 Portfooio-table"><p class="divcss Portfooio-text-list">•Environmental Design</p></div>
+            <div class="col-xs-6 col-sm-4 col-md-2 Portfooio-table"><p class="divcss Portfooio-text-list">•Film</p></div>
+            <div class="col-xs-6 col-sm-4 col-md-2 Portfooio-table"><p class="divcss Portfooio-text-list">•Fine Art</p></div>
+            <div class="col-xs-6 col-sm-4 col-md-2 Portfooio-table"><p class="divcss Portfooio-text-list">•Graphic Design</p></div>
+            <div class="col-xs-6 col-sm-4 col-md-2 Portfooio-table"><p class="divcss Portfooio-text-list">•Illustration</p></div>
+            <div class="col-xs-6 col-sm-4 col-md-2 Portfooio-table"><p class="divcss Portfooio-text-list">•Interaction Design</p></div>
+            <div class="col-xs-6 col-sm-4 col-md-2 Portfooio-table"><p class="divcss Portfooio-text-list">•Photography and Imaging</p></div>
+            <div class="col-xs-6 col-sm-4 col-md-2 Portfooio-table"><p class="divcss Portfooio-text-list">•Product Design</p></div>
+            <div class="col-xs-6 col-sm-4 col-md-2 Portfooio-table"><p class="divcss Portfooio-text-list">•Transportation Design</p></div>
+            <div class="col-xs-6 col-sm-4 col-md-2 Portfooio-table"><p class="divcss Portfooio-text-list">•Fashion Design</p></div>
+        </div>
+    </div>  
+
+    <div class="container">
+        <div class="row">
+            <div class="center-block">
+                <h2 class="Portfooio-school-title text-center">SUCCESSFUL CASES - ELITE SCHOOLS</h2>
+            </div>
+            @foreach (var item in ViewData["list"] as List<string>)
+            {
+                <div class="col-xs-6 col-sm-3 col-md-2">
+                    <div class="over_content-centered over_content Portfooio-img">
+                        <img class="Portfooio-content-img   img-circle" src="@item" />
+                    </div>
+                </div>
+            }
+
+
+        </div>
+    </div>
+
+                            
+

@@ -1,0 +1,98 @@
+﻿@{
+    
+}
+
+<nav class="navbar-default secondary-navbar position-sticky">
+    <div class="container-fluid">
+        <ul id="myTab" class="nav navbar-nav text-uppercase font-weight-bold">
+            <li class="active">
+                <a data-toggle="tab" aria-expanded="true" href="#About-Laelaps">About  Laelaps</a>
+            </li>
+            <li>
+                <a data-toggle="tab" aria-expanded="false" href="#About-Lnstructors">About  Lnstructors</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="tab-content" id="content">
+    <div class="tab-pane fade in active" id="About-Laelaps">
+        <section class="container-fluid" id="section-about-school">
+            <div class="row d-md-flex">
+                <div class="col-md-6 px-0 about-school-bg">
+                </div>
+                <div class="col-md-6 px-lg-6 mt-5">
+                    @*<h3 class="h1 font-family-grotesk-md font-smoothing mb-3">
+                        Title
+                    </h3>*@
+                    <p class="divcss text_card font-size-16">
+                        Laelaps Design Academy, headquartered in Orange County, California, is a leading school of concept art,
+                        illustration, and entertainment design with a single focus: helping students around the world to learn
+                        and reach their artistic & professional goals. We work collaboratively with a wealth of industry-top
+                        artists from most major studios and best art & design schools to provide comprehensive
+                        courses/workshops and customized consulting services for all types and levels of experience.
+                    </p>
+                    <p class="divcss text_card font-size-16">
+                        We understand every student has different background, personality, and unique talent, and Laelaps is
+                        your trusted instructor and mentor. Whether helping you become a better artist, keeping you up to date
+                        on emerging trends and techniques in the industry or empowering you with the knowledge and tools
+                        you will need to supplement your college studies and land your next job, once you partner with us, we
+                        will focus our passion, knowledge, professionalism and carefulness and deliver the best solution for you.
+                        What we offer students is truly the ability and the opportunities to nurture and expand their artistic and
+                        design senses, skills, and vision, and make their dreams a reality. We believe student success is our
+                        success - and it’s obvious in everything we do at Laelaps.
+                    </p>
+
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="tab-pane fade" id="About-Lnstructors">
+        <section class="container">
+            <div class="content-inner">
+                <div class="row">
+                    @foreach (var item in ViewData["teachers"] as List<LaelapsDesignWebsite.Models.Teacher>)
+                    {
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <div class="pic-inner">
+                                <article>
+                                    <header class="over_content-centered over_content ">
+                                        <img class="content-img  img-circle" src="@item.Img" />
+                                    </header>
+                                    <div>
+                                        <h4>@item.Name</h4>
+                                        <p>
+                                            <b>Current:</b>
+                                            @item.Current
+                                        </p>
+                                        <p>
+                                            @if (!string.IsNullOrEmpty(item.Education))
+                                            {
+                                                <b>Education:</b>
+                                                @item.Education
+                                            }
+                                        </p>
+                                        <p>
+                                            @if (!string.IsNullOrEmpty(item.Previous))
+                                            {
+                                                <b>Previous:</b>
+                                                @item.Previous
+                                            }
+                                        </p>                                            
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
+@section Scripts{
+    <script type="text/javascript">
+        $(function () {
+
+        });
+    </script>
+}

@@ -1,0 +1,63 @@
+﻿<br  />
+<section>
+    <div class="center-block">
+        <h1 class="text-center page-title">GALLERY</h1>
+    </div>
+    @*<nav class="navbar navbar-default secondary-navbar position-sticky">
+            <div class="container-fluid">
+                <ul id="myTab" class="nav navbar-nav text-uppercase font-weight-bold">
+                    <li class="active">
+                        <a data-toggle="tab" aria-expanded="true" href="#Students">Students</a>
+                    </li>
+                    <li>
+                        <a data-toggle="tab" aria-expanded="false" href="#Instructors">Instructors</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="tab-pane fade in active" id="Students">
+            <section class="container">
+                <div class="content-inner">
+                    <div class="row">
+                        @for (int i = 0; i < 13; i++)
+                        {
+                            <div class="col-xs-12 col-sm-6 col-md-4">
+                                <div class="pic-inner">
+                                    <header class="over_content-centered over_content ">
+                                        <img class="pic" src="~/images/pic2.jpg" />
+                                    </header>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="tab-pane fade" id="Instructors">
+
+        </div>*@
+    <div class="container">
+        <div class="row">
+            <div>
+                <div class="col-xs-12 col-sm-6 col-md-6">
+                    @*<a asp-area="" asp-controller="Gallery" asp-action="Student" class="text-center Gallery-link">Students</a>*@
+                    @Html.ActionLink("Students", "Student", "Gallery", new { area = "" }, new { @class = "text-center Gallery-link" })
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6">
+                    @*<a asp-area="" asp-controller="Gallery" asp-action="Instructors" class="text-center Gallery-link">Instructors</a>*@
+                    @Html.ActionLink("Instructors", "Instructors", "Gallery", new { area = "" }, new { @class = "text-center Gallery-link" })
+                </div>
+            </div>
+            <div>
+                @foreach (var item in ViewData["list"] as List<string>)
+                {
+                    <div class="col-xs-12 col-sm-6 col-md-6">
+                        <div class="over_content-centered over_content Portfooio-img">
+                            <img class="Gallery-content-img" src="@item" />
+                        </div>
+                    </div>
+                }
+            </div>
+            </div>
+        </div>
+</section>   

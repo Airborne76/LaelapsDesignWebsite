@@ -1,0 +1,431 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{87267E72-A330-4A88-89A1-6733E9E5B354}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LaelapsDesignWebsite</RootNamespace>
+    <AssemblyName>LaelapsDesignWebsite</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.2.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>..\packages\BouncyCastle.1.8.2\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="MailKit, Version=2.1.0.0, Culture=neutral, PublicKeyToken=4e064fe7c44a8f1b, processorArchitecture=MSIL">
+      <HintPath>..\packages\MailKit.2.1.3\lib\net45\MailKit.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MimeKit, Version=2.1.0.0, Culture=neutral, PublicKeyToken=bede1c8a46c66814, processorArchitecture=MSIL">
+      <HintPath>..\packages\MimeKit.2.1.3\lib\net45\MimeKit.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Web.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.4\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.4\lib\net45\System.Web.Webpages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Deployment">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.4\lib\net45\System.Web.Webpages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.4\lib\net45\System.Web.Webpages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Helpers">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.4\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.4\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Global.asax" />
+    <Content Include="Web.config" />
+    <Content Include="wwwroot\css\site.css" />
+    <Content Include="wwwroot\css\site.min.css" />
+    <Content Include="wwwroot\favicon.ico" />
+    <Content Include="wwwroot\images\About\BenZhang.JPG" />
+    <Content Include="wwwroot\images\About\HongLy.jpg" />
+    <Content Include="wwwroot\images\About\JohnPark.jpg" />
+    <Content Include="wwwroot\images\About\LaelapsLocation.jpg" />
+    <Content Include="wwwroot\images\About\Laelaps_Location.jpg" />
+    <Content Include="wwwroot\images\About\LliaYu.jpg" />
+    <Content Include="wwwroot\images\About\PaulKwon.jpg" />
+    <Content Include="wwwroot\images\About\QiuFang.JPG" />
+    <Content Include="wwwroot\images\Contact\CorporateTitle.gif" />
+    <Content Include="wwwroot\images\Contact\CorporateTitle2.gif" />
+    <Content Include="wwwroot\images\Contact\OrangeCap.gif" />
+    <Content Include="wwwroot\images\Contact\OrangeCap2.gif" />
+    <Content Include="wwwroot\images\Courses\1.png" />
+    <Content Include="wwwroot\images\Courses\2.png" />
+    <Content Include="wwwroot\images\Courses\3.png" />
+    <Content Include="wwwroot\images\Courses\4.jpg" />
+    <Content Include="wwwroot\images\Courses\5.jpg" />
+    <Content Include="wwwroot\images\Courses\6.png" />
+    <Content Include="wwwroot\images\Courses\7.png" />
+    <Content Include="wwwroot\images\Courses\8.png" />
+    <Content Include="wwwroot\images\Gallery\Students\01.jpg" />
+    <Content Include="wwwroot\images\Gallery\Students\01_E5_90_89_E4_BB_96_E6_9E_AA_E6_89_8B_E5_AF_BC_E5_87_BA.jpg" />
+    <Content Include="wwwroot\images\Gallery\Students\02.jpg" />
+    <Content Include="wwwroot\images\Gallery\Students\02_E8_B4_9D_E6_96_AF_E6_88_98_E5_A3_AB_E5_AF_BC_E5_87_BA.jpg" />
+    <Content Include="wwwroot\images\Gallery\Students\03.jpg" />
+    <Content Include="wwwroot\images\Gallery\Students\03_E8_83_8C_E8_A7_86_E5_9B_BE.jpg" />
+    <Content Include="wwwroot\images\Gallery\Students\04.jpg" />
+    <Content Include="wwwroot\images\Gallery\Students\05.jpg" />
+    <Content Include="wwwroot\images\Gallery\Students\06.jpg" />
+    <Content Include="wwwroot\images\Gallery\Students\1.jpg" />
+    <Content Include="wwwroot\images\Gallery\Students\1_-2.jpg" />
+    <Content Include="wwwroot\images\Gallery\Students\3.jpg" />
+    <Content Include="wwwroot\images\Gallery\Students\4.jpg" />
+    <Content Include="wwwroot\images\Gallery\Students\5 %281%29.jpg" />
+    <Content Include="wwwroot\images\Gallery\Students\5.jpg" />
+    <Content Include="wwwroot\images\Gallery\Students\6_E4_BA_BA_E9_85_8D_E8_89_B2.jpg" />
+    <Content Include="wwwroot\images\Gallery\Students\7.jpg" />
+    <Content Include="wwwroot\images\Gallery\Students\color %281%29.jpg" />
+    <Content Include="wwwroot\images\Gallery\Students\color.jpg" />
+    <Content Include="wwwroot\images\Gallery\Students\LInE._E6_9D_A5_E6_B7_BB_E7_BF_BC.jpg" />
+    <Content Include="wwwroot\images\Gallery\Students\lineup.jpg" />
+    <Content Include="wwwroot\images\Gallery\Students\LINEUP2.jpg" />
+    <Content Include="wwwroot\images\Gallery\Students\line_work_01 %281%29.jpg" />
+    <Content Include="wwwroot\images\Gallery\Students\line_work_01.jpg" />
+    <Content Include="wwwroot\images\Gallery\Students\line_work_01_props.jpg" />
+    <Content Include="wwwroot\images\Gallery\Students\line_work_02 %281%29.jpg" />
+    <Content Include="wwwroot\images\Gallery\Students\line_work_02.jpg" />
+    <Content Include="wwwroot\images\Gallery\Students\line_work_1.jpg" />
+    <Content Include="wwwroot\images\Gallery\Students\PECKER.jpg" />
+    <Content Include="wwwroot\images\Gallery\Students\photo.jpg" />
+    <Content Include="wwwroot\images\Gallery\Students\QIU7_1 %281%29.jpg" />
+    <Content Include="wwwroot\images\Gallery\Students\QIU7_1.jpg" />
+    <Content Include="wwwroot\images\Gallery\Students\QIU8-1.jpg" />
+    <Content Include="wwwroot\images\Gallery\Students\SANJIN_WEEK6_1.jpg" />
+    <Content Include="wwwroot\images\Gallery\Students\SANJIN_WEEK6_3.jpg" />
+    <Content Include="wwwroot\images\Gallery\Students\shangse.jpg" />
+    <Content Include="wwwroot\images\Gallery\Students\Shuhan.jpg" />
+    <Content Include="wwwroot\images\Gallery\Students\WechatIMG15.jpeg" />
+    <Content Include="wwwroot\images\Gallery\Students\WEEK2_ALL.jpg" />
+    <Content Include="wwwroot\images\Gallery\Students\WEEK4 %281%29.jpg" />
+    <Content Include="wwwroot\images\Gallery\Students\week4 %282%29.jpg" />
+    <Content Include="wwwroot\images\Gallery\Students\week4.jpg" />
+    <Content Include="wwwroot\images\Gallery\Students\week4_XF_Wang.jpg" />
+    <Content Include="wwwroot\images\Gallery\Students\Week7_E5_90_89_E4_BB_96_E6_9E_AA_E6_89_8B.jpg" />
+    <Content Include="wwwroot\images\Gallery\Students\_E4_B8_8A_E8_89_B2.jpg" />
+    <Content Include="wwwroot\images\Gallery\Students\_E5_85_AC_E4_B8_BB.jpg" />
+    <Content Include="wwwroot\images\Gallery\Students\_E5_85_AD_E4_BA_BA-.jpg" />
+    <Content Include="wwwroot\images\Gallery\Students\_E5_85_AD_E4_BA_BA-_E5_85_B8_E7_8B_B1_E9_95_BF.jpg" />
+    <Content Include="wwwroot\images\Gallery\Students\_E5_85_AD_E4_BA_BA-_E5_A5_B3_E5_8C_BB_E7_94_9F.jpg" />
+    <Content Include="wwwroot\images\Gallery\Students\_E5_85_AD_E4_BA_BA-_E5_A5_B3_E5_AD_A9.jpg" />
+    <Content Include="wwwroot\images\Gallery\Students\_E5_85_AD_E4_BA_BA-_E6_AD_A6_E5_A3_AB.jpg" />
+    <Content Include="wwwroot\images\Gallery\Students\_E5_85_AD_E4_BA_BA-_E6_B5_B7_E9_BE_9F.jpg" />
+    <Content Include="wwwroot\images\Gallery\Students\_E5_85_AD_E4_BA_BA-_E9_95_BF_E8_80_85.jpg" />
+    <Content Include="wwwroot\images\Gallery\Students\_E5_90_88_E7_85_A7_E9_85_8D_E8_89_B2.jpg" />
+    <Content Include="wwwroot\images\Gallery\Students\_E5_AE_A4_E5_A4_96.jpg" />
+    <Content Include="wwwroot\images\Gallery\Students\_E5_AE_A4_E5_A4_96_E5_BB_BA_E7_AD_91.jpg" />
+    <Content Include="wwwroot\images\Gallery\Students\_E5_B0_8F_E6_80_AA.jpg" />
+    <Content Include="wwwroot\images\Gallery\Students\_E5_B7_A5_E7_A8_8B_E5_B8_882.jpg" />
+    <Content Include="wwwroot\images\Gallery\Students\_E5_B8_A6_E5_88_80_E4_BE_8D_E5_8D_AB.jpg" />
+    <Content Include="wwwroot\images\Gallery\Students\_E6_88_98_E4_BA_89_E7_BB_9F_E9_A2_86_E7_BB_86_E5_8C_96.jpg" />
+    <Content Include="wwwroot\images\Gallery\Students\_E6_8E_A2_E9_99_A9_E5_AE_B6.jpg" />
+    <Content Include="wwwroot\images\Gallery\Students\_E6_95_B4_E7_90_86.png" />
+    <Content Include="wwwroot\images\Gallery\Students\_E6_97_8F_E9_95_BF2.jpg" />
+    <Content Include="wwwroot\images\Gallery\Students\_E6_9D_A8_E6_88_AC.jpg" />
+    <Content Include="wwwroot\images\Gallery\Students\_E6_A9_84_E6_A6_84_E7_90_83_E8_BF_90_E5_8A_A8_E5_91_98_E9_85_8D_E8_89_B2_E6_8F_90_E4_BA_A4.jpg" />
+    <Content Include="wwwroot\images\Gallery\Students\_E7_8B_AC_E8_A7_92_E4_BB_99.jpg" />
+    <Content Include="wwwroot\images\Gallery\Students\_E7_8E_8B_E5_9F_8E_E7_9A_84_E5_A4_A7_E8_87_A3.jpg" />
+    <Content Include="wwwroot\images\Gallery\Students\_E7_BA_BF_E7_A8_BF_E4_B8_8A_E8_89_B2.png" />
+    <Content Include="wwwroot\images\Gallery\Students\_E8_89_B2_E7_A8_BF.jpg" />
+    <Content Include="wwwroot\images\Gallery\Students\_E8_A7_92_E8_89_B2_E5_90_88_E5_B9_B6_E5_89_AF_E6_9C_AC.jpg" />
+    <Content Include="wwwroot\images\Gallery\Students\_E8_A7_92_E8_89_B2_E9_85_8D_E8_89_B21.jpg" />
+    <Content Include="wwwroot\images\Gallery\Students\_E9_85_8D_E8_89_B2_E6_96_B9_E6_A1_88.jpg" />
+    <Content Include="wwwroot\images\Gallery\Students\_E9_93_81_E5_8C_A0.jpg" />
+    <Content Include="wwwroot\images\Gallery\Students\_E9_93_BA_E8_89_B2.jpg" />
+    <Content Include="wwwroot\images\Gallery\Students\_E9_94_A6_E8_A1_A3_E5_8D_AB.jpg" />
+    <Content Include="wwwroot\images\Gallery\Students\_E9_A2_9C_E8_89_B2_E7_BB_84_E5_90_882.0.jpg" />
+    <Content Include="wwwroot\images\Gallery\Teachers\0079JStjgy1futynv4zqtj33xf2jih5j.jpg" />
+    <Content Include="wwwroot\images\Gallery\Teachers\0079JStjgy1fveste8f3ij32qw31w1l3.jpg" />
+    <Content Include="wwwroot\images\Gallery\Teachers\0079JStjgy1fvxb5nixagj32bv2mkajf.jpg" />
+    <Content Include="wwwroot\images\Gallery\Teachers\ben-zhang-006zttbngy1fmo74go1wsj31kw0w0hdu.jpg" />
+    <Content Include="wwwroot\images\Gallery\Teachers\ben-zhang-antarctica-snow-truck-concept.jpg" />
+    <Content Include="wwwroot\images\Gallery\Teachers\ben-zhang-atlantic-tracer-skin-concept.jpg" />
+    <Content Include="wwwroot\images\Gallery\Teachers\ben-zhang-brigitte-hero-concept.jpg" />
+    <Content Include="wwwroot\images\Gallery\Teachers\ben-zhang-brigitte-movement-study.jpg" />
+    <Content Include="wwwroot\images\Gallery\Teachers\ben-zhang-butcher-roadhog.jpg" />
+    <Content Include="wwwroot\images\Gallery\Teachers\ben-zhang-china-cyberpunk.jpg" />
+    <Content Include="wwwroot\images\Gallery\Teachers\ben-zhang-dorado-early-ideation.jpg" />
+    <Content Include="wwwroot\images\Gallery\Teachers\ben-zhang-factory-texterior-concept.jpg" />
+    <Content Include="wwwroot\images\Gallery\Teachers\ben-zhang-forest-spirit-orisa.jpg" />
+    <Content Include="wwwroot\images\Gallery\Teachers\ben-zhang-fusion-driver-concept.jpg" />
+    <Content Include="wwwroot\images\Gallery\Teachers\ben-zhang-hanamura-concept-art.jpg" />
+    <Content Include="wwwroot\images\Gallery\Teachers\ben-zhang-london-concept-01.jpg" />
+    <Content Include="wwwroot\images\Gallery\Teachers\ben-zhang-london-riot.jpg" />
+    <Content Include="wwwroot\images\Gallery\Teachers\ben-zhang-mei-yeti-hunter-skin.jpg" />
+    <Content Include="wwwroot\images\Gallery\Teachers\ben-zhang-oni-genji-skin-concept.jpg" />
+    <Content Include="wwwroot\images\Gallery\Teachers\ben-zhang-orisa-character-concept.jpg" />
+    <Content Include="wwwroot\images\Gallery\Teachers\ben-zhang-pacific-genji-skin-concept.jpg" />
+    <Content Include="wwwroot\images\Gallery\Teachers\ben-zhang-pumpkin-reaper.jpg" />
+    <Content Include="wwwroot\images\Gallery\Teachers\ben-zhang-rescue-mei-skin-concept.jpg" />
+    <Content Include="wwwroot\images\Gallery\Teachers\ben-zhang-rivet-gun-concept.jpg" />
+    <Content Include="wwwroot\images\Gallery\Teachers\ben-zhang-sombra-machinepistol-translocator.jpg" />
+    <Content Include="wwwroot\images\Gallery\Teachers\ben-zhang-tracer-track-and-field-skin-concept.jpg" />
+    <Content Include="wwwroot\images\Gallery\Teachers\ben-zhang-unnamed.jpg" />
+    <Content Include="wwwroot\images\Gallery\Teachers\ben-zhang-volskaya-industry-concept-01.jpg" />
+    <Content Include="wwwroot\images\Gallery\Teachers\john-park-10900155-584072039140-1872611650724337548-o.jpg" />
+    <Content Include="wwwroot\images\Gallery\Teachers\john-park-13041077-593716611340-2464848238801377138-o.jpg" />
+    <Content Include="wwwroot\images\Gallery\Teachers\john-park-13710479-597638227390-4198005549997487082-o.jpg" />
+    <Content Include="wwwroot\images\Gallery\Teachers\john-park-22713263-623563373190-170157275947855388-o.jpg" />
+    <Content Include="wwwroot\images\Gallery\Teachers\john-park-23799910-624918198110-1925140410994545930-o.jpg" />
+    <Content Include="wwwroot\images\Gallery\Teachers\john-park-25074924-625817905090-3866368755538225161-o.jpg" />
+    <Content Include="wwwroot\images\Gallery\Teachers\john-park-jp-horse-02.jpg" />
+    <Content Include="wwwroot\images\Gallery\Teachers\john-park-jp-horse.jpg" />
+    <Content Include="wwwroot\images\Gallery\Teachers\llia-yu-001.jpg" />
+    <Content Include="wwwroot\images\Gallery\Teachers\llia-yu-002.jpg" />
+    <Content Include="wwwroot\images\Gallery\Teachers\llia-yu-black-cat-dva.jpg" />
+    <Content Include="wwwroot\images\Gallery\Teachers\llia-yu-busan-01.jpg" />
+    <Content Include="wwwroot\images\Gallery\Teachers\llia-yu-busan-02.jpg" />
+    <Content Include="wwwroot\images\Gallery\Teachers\llia-yu-creature-01.jpg" />
+    <Content Include="wwwroot\images\Gallery\Teachers\llia-yu-finall-003-11.jpg" />
+    <Content Include="wwwroot\images\Gallery\Teachers\llia-yu-green-006.jpg" />
+    <Content Include="wwwroot\images\Gallery\Teachers\llia-yu-llia-fianl-002-1.jpg" />
+    <Content Include="wwwroot\images\Gallery\Teachers\llia-yu-spaceship-final-2.jpg" />
+    <Content Include="wwwroot\images\Gallery\Teachers\llia-yu-thailand-001.jpg" />
+    <Content Include="wwwroot\images\Gallery\Teachers\llia-yu-towers.jpg" />
+    <Content Include="wwwroot\images\Gallery\Teachers\llia-yu-tree-temple.jpg" />
+    <Content Include="wwwroot\images\Gallery\Teachers\llia-yu-venice-mood-painting.jpg" />
+    <Content Include="wwwroot\images\Gallery\Teachers\paul-kwon-dragon-sorceress-zyra-zeronis-01.jpg" />
+    <Content Include="wwwroot\images\Gallery\Teachers\paul-kwon-elementalist-lux-dark-form-official-concept-art-by-paul-kwon-02.jpg" />
+    <Content Include="wwwroot\images\Gallery\Teachers\paul-kwon-elysia-deathverse-02-dark-lr-01.jpg" />
+    <Content Include="wwwroot\images\Gallery\Teachers\paul-kwon-exella-deathverse-pt-3.jpg" />
+    <Content Include="wwwroot\images\Gallery\Teachers\paul-kwon-hyper-strike-zeronis-01-lr.jpg" />
+    <Content Include="wwwroot\images\Gallery\Teachers\paul-kwon-star-guardian-ahri-sketch-character-03-new-color-sprex-01.jpg" />
+    <Content Include="wwwroot\images\Gallery\Teachers\paul-kwon-sybila-deathverse-lr-zeronis-01.jpg" />
+    <Content Include="wwwroot\images\Gallery\Teachers\paul-kwon-syndra-star-guardian-master-final.jpg" />
+    <Content Include="wwwroot\images\Gallery\Teachers\paul-kwon-vampiric-drake-part-1-10.jpg" />
+    <Content Include="wwwroot\images\Gallery\Teachers\qiu-fang-1.jpg" />
+    <Content Include="wwwroot\images\Gallery\Teachers\qiu-fang-2.jpg" />
+    <Content Include="wwwroot\images\Gallery\Teachers\qiu-fang-avviator.jpg" />
+    <Content Include="wwwroot\images\Gallery\Teachers\qiu-fang-baihu-concept.jpg" />
+    <Content Include="wwwroot\images\Gallery\Teachers\qiu-fang-baihu-weapon-copy.jpg" />
+    <Content Include="wwwroot\images\Gallery\Teachers\qiu-fang-falconer-function-sketches.jpg" />
+    <Content Include="wwwroot\images\Gallery\Teachers\qiu-fang-harvester.jpg" />
+    <Content Include="wwwroot\images\Gallery\Teachers\qiu-fang-moira.jpg" />
+    <Content Include="wwwroot\images\Gallery\Teachers\qiu-fang-portalier-v2.jpg" />
+    <Content Include="wwwroot\images\Gallery\Teachers\qiu-fang-qinglong-concept-copy.jpg" />
+    <Content Include="wwwroot\images\Gallery\Teachers\qiu-fang-zhuque-concept-copy.jpg" />
+    <Content Include="wwwroot\images\Gallery\Teachers\WechatIMG285.jpeg" />
+    <Content Include="wwwroot\images\Gallery\Teachers\WechatIMG286.jpeg" />
+    <Content Include="wwwroot\images\Gallery\Teachers\WechatIMG287.jpeg" />
+    <Content Include="wwwroot\images\Gallery\Teachers\WechatIMG288.jpeg" />
+    <Content Include="wwwroot\images\Gallery\Teachers\WechatIMG289.jpeg.jpg" />
+    <Content Include="wwwroot\images\Gallery\Teachers\zeronis-3c894329-c24e-4ddc-b1c5-08e57be6d9f9.jpg" />
+    <Content Include="wwwroot\images\Gallery\Teachers\zeronis-46500933-10110212321373001-5742858525906829312-o.jpg" />
+    <Content Include="wwwroot\images\Gallery\Teachers\zeronis-akali-kda-popstar-concept-front-shot-final-01.jpg" />
+    <Content Include="wwwroot\images\Gallery\Teachers\zeronis-b36622ae-7740-4a1f-bf21-4099ed8fa50f.jpg" />
+    <Content Include="wwwroot\images\Gallery\Teachers\zeronis-katarina-deathsworn-pitch-art-lr01.jpg" />
+    <Content Include="wwwroot\images\Gallery\Teachers\zeronis-kda-lineup-concept-front-shot-01.jpg" />
+    <Content Include="wwwroot\images\Gallery\Teachers\zeronis-koriandr-starfire-lr-zeronis.jpg" />
+    <Content Include="wwwroot\images\Gallery\Teachers\zeronis-syrene-saren-phantom-zeronis-02.jpg" />
+    <Content Include="wwwroot\images\Gallery\Teachers\zeronis-syrenne-phantom-portrait-deathverse-lr-01.jpg" />
+    <Content Include="wwwroot\images\Gallery\Teachers\zeronis-witch-mercy-halloween-overwatch-lr-01.jpg" />
+    <Content Include="wwwroot\images\Home\Ben_Zhang.jpg" />
+    <Content Include="wwwroot\images\Home\john_park.jpg" />
+    <Content Include="wwwroot\images\Home\LIia_Yu.jpg" />
+    <Content Include="wwwroot\images\Home\logo.png" />
+    <Content Include="wwwroot\images\Home\Qiu_fang.jpg" />
+    <Content Include="wwwroot\images\Home\Zeronis.jpg" />
+    <Content Include="wwwroot\images\pic1.png" />
+    <Content Include="wwwroot\images\PrortfolioPrep\LOGO-1.png" />
+    <Content Include="wwwroot\images\PrortfolioPrep\LOGO-10.png" />
+    <Content Include="wwwroot\images\PrortfolioPrep\LOGO-11.png" />
+    <Content Include="wwwroot\images\PrortfolioPrep\LOGO-12.png" />
+    <Content Include="wwwroot\images\PrortfolioPrep\LOGO-13.png" />
+    <Content Include="wwwroot\images\PrortfolioPrep\LOGO-14.png" />
+    <Content Include="wwwroot\images\PrortfolioPrep\LOGO-2.png" />
+    <Content Include="wwwroot\images\PrortfolioPrep\LOGO-3.png" />
+    <Content Include="wwwroot\images\PrortfolioPrep\LOGO-4.png" />
+    <Content Include="wwwroot\images\PrortfolioPrep\LOGO-5.png" />
+    <Content Include="wwwroot\images\PrortfolioPrep\LOGO-6.png" />
+    <Content Include="wwwroot\images\PrortfolioPrep\LOGO-7.png" />
+    <Content Include="wwwroot\images\PrortfolioPrep\LOGO-8.png" />
+    <Content Include="wwwroot\images\PrortfolioPrep\LOGO-9.png" />
+    <Content Include="wwwroot\js\site.js" />
+    <Content Include="wwwroot\js\site.min.js" />
+    <Content Include="wwwroot\lib\bootstrap\dist\css\bootstrap-theme.css" />
+    <Content Include="wwwroot\lib\bootstrap\dist\css\bootstrap-theme.min.css" />
+    <Content Include="wwwroot\lib\bootstrap\dist\css\bootstrap.css" />
+    <Content Include="wwwroot\lib\bootstrap\dist\css\bootstrap.min.css" />
+    <Content Include="wwwroot\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="wwwroot\lib\bootstrap\dist\js\bootstrap.js" />
+    <Content Include="wwwroot\lib\bootstrap\dist\js\bootstrap.min.js" />
+    <Content Include="wwwroot\lib\bootstrap\dist\js\npm.js" />
+    <Content Include="wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js" />
+    <Content Include="wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js" />
+    <Content Include="wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt" />
+    <Content Include="wwwroot\lib\jquery-validation\dist\additional-methods.js" />
+    <Content Include="wwwroot\lib\jquery-validation\dist\additional-methods.min.js" />
+    <Content Include="wwwroot\lib\jquery-validation\dist\jquery.validate.js" />
+    <Content Include="wwwroot\lib\jquery-validation\dist\jquery.validate.min.js" />
+    <Content Include="wwwroot\lib\jquery\dist\jquery.js" />
+    <Content Include="wwwroot\lib\jquery\dist\jquery.min.js" />
+    <Content Include="wwwroot\lib\jquery\LICENSE.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AboutController.cs" />
+    <Compile Include="Controllers\ContactController.cs" />
+    <Compile Include="Controllers\CoursesController.cs" />
+    <Compile Include="Controllers\GalleryController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\OutSourcingController.cs" />
+    <Compile Include="Controllers\PortfolioPrepController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Contact.cs" />
+    <Compile Include="Models\ErrorViewModel.cs" />
+    <Compile Include="Models\Teacher.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\MailService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\web.config" />
+    <Content Include="bundleconfig.json" />
+    <None Include="packages.config" />
+    <Content Include="Views\About\Index.cshtml" />
+    <Content Include="Views\Contact\Index.cshtml" />
+    <Content Include="Views\Courses\Index.cshtml" />
+    <Content Include="Views\Gallery\Index.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\Privacy.cshtml" />
+    <Content Include="Views\OutSourcing\Index.cshtml" />
+    <Content Include="Views\PortfolioPrep\Index.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Shared\_ValidationScriptsPartial.cshtml" />
+    <Content Include="Views\_ViewImports.cshtml" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <Content Include="wwwroot\lib\bootstrap\.bower.json" />
+    <Content Include="wwwroot\lib\bootstrap\dist\css\bootstrap-theme.css.map" />
+    <Content Include="wwwroot\lib\bootstrap\dist\css\bootstrap-theme.min.css.map" />
+    <Content Include="wwwroot\lib\bootstrap\dist\css\bootstrap.css.map" />
+    <Content Include="wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map" />
+    <Content Include="wwwroot\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="wwwroot\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="wwwroot\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="wwwroot\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="wwwroot\lib\bootstrap\LICENSE" />
+    <Content Include="wwwroot\lib\jquery-validation-unobtrusive\.bower.json" />
+    <Content Include="wwwroot\lib\jquery-validation\.bower.json" />
+    <Content Include="wwwroot\lib\jquery-validation\LICENSE.md" />
+    <Content Include="wwwroot\lib\jquery\.bower.json" />
+    <Content Include="wwwroot\lib\jquery\dist\jquery.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>54466</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:54466/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>这台计算机上缺少此项目引用的 NuGet 程序包。使用“NuGet 程序包还原”可下载这些程序包。有关更多信息，请参见 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的文件是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+    <Error Condition="!Exists('..\packages\BuildBundlerMinifier.2.8.391\build\BuildBundlerMinifier.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\BuildBundlerMinifier.2.8.391\build\BuildBundlerMinifier.targets'))" />
+  </Target>
+  <Import Project="..\packages\BuildBundlerMinifier.2.8.391\build\BuildBundlerMinifier.targets" Condition="Exists('..\packages\BuildBundlerMinifier.2.8.391\build\BuildBundlerMinifier.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
