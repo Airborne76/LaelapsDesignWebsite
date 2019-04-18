@@ -102,7 +102,9 @@
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
     <Content Include="wwwroot\css\site.css" />
-    <Content Include="wwwroot\css\site.min.css" />
+    <Content Include="wwwroot\css\site.min.css">
+      <DependentUpon>site.css</DependentUpon>
+    </Content>
     <Content Include="wwwroot\favicon.ico" />
     <Content Include="wwwroot\images\About\BenZhang.JPG" />
     <Content Include="wwwroot\images\About\HongLy.jpg" />
@@ -289,6 +291,7 @@
     <Content Include="wwwroot\images\Home\john_park.jpg" />
     <Content Include="wwwroot\images\Home\LIia_Yu.jpg" />
     <Content Include="wwwroot\images\Home\logo.png" />
+    <Content Include="wwwroot\images\Home\logo_final.png" />
     <Content Include="wwwroot\images\Home\Qiu_fang.jpg" />
     <Content Include="wwwroot\images\Home\Zeronis.jpg" />
     <Content Include="wwwroot\images\pic1.png" />

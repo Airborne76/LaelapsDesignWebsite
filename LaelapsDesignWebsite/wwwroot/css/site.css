@@ -4,6 +4,10 @@ body {
     padding-top: 30px;
     padding-bottom: 20px;
 }
+.bodyBackGround {
+    background-color:black;
+}
+
 a {
     color: #0085bd;
     text-decoration: none
@@ -43,9 +47,9 @@ a:hover, a:active {
 .logoContent {
     
     background-attachment: scroll;
-    background-image: url(../images/Home/logo.png);
+    background-image: url(../images/Home/logo_final.png);
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: 300px;
     background-position: left;
     min-height:70px;
 
