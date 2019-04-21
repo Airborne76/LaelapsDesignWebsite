@@ -2,17 +2,17 @@
     
 }
 
-<nav class="navbar-default secondary-navbar position-sticky">
-    <div class="container-fluid">
-        <ul id="myTab" class="nav navbar-nav text-uppercase font-weight-bold">
-            <li class="active">
-                <a data-toggle="tab" aria-expanded="true" href="#About-Laelaps">About  Laelaps</a>
-            </li>
-            <li>
-                <a data-toggle="tab" aria-expanded="false" href="#About-Lnstructors">About  Lnstructors</a>
-            </li>
-        </ul>
-    </div>
+<nav class="navbar-default secondary-navbar position-sticky title-center">    
+    <div class="container-fluid ">        
+            <ul id="myTab" class="nav navbar-nav text-uppercase">
+                <li class="active">
+                    <a data-toggle="tab" aria-expanded="true" href="#About-Laelaps">About  Laelaps</a>
+                </li>
+                <li>
+                    <a data-toggle="tab" aria-expanded="false" href="#About-Lnstructors">About  Lnstructors</a>
+                </li>
+            </ul>
+    </div>   
 </nav>
 <div class="tab-content" id="content">
     <div class="tab-pane fade in active" id="About-Laelaps">
@@ -24,14 +24,14 @@
                     @*<h3 class="h1 font-family-grotesk-md font-smoothing mb-3">
                         Title
                     </h3>*@
-                    <p class="divcss text_card font-size-16">
+                    <p class="divcss text_card font-size-14">
                         Laelaps Design Academy, headquartered in Orange County, California, is a leading school of concept art,
                         illustration, and entertainment design with a single focus: helping students around the world to learn
                         and reach their artistic & professional goals. We work collaboratively with a wealth of industry-top
                         artists from most major studios and best art & design schools to provide comprehensive
                         courses/workshops and customized consulting services for all types and levels of experience.
                     </p>
-                    <p class="divcss text_card font-size-16">
+                    <p class="divcss text_card font-size-14">
                         We understand every student has different background, personality, and unique talent, and Laelaps is
                         your trusted instructor and mentor. Whether helping you become a better artist, keeping you up to date
                         on emerging trends and techniques in the industry or empowering you with the knowledge and tools
@@ -41,7 +41,6 @@
                         design senses, skills, and vision, and make their dreams a reality. We believe student success is our
                         success - and it’s obvious in everything we do at Laelaps.
                     </p>
-
                 </div>
             </div>
         </section>
@@ -52,30 +51,31 @@
                 <div class="row">
                     @foreach (var item in ViewData["teachers"] as List<LaelapsDesignWebsite.Models.Teacher>)
                     {
-                        <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="col-xs-12 col-sm-6 col-md-4 about-list-block">
                             <div class="pic-inner">
                                 <article>
                                     <header class="over_content-centered over_content ">
                                         <img class="content-img  img-circle" src="@item.Img" />
                                     </header>
                                     <div>
-                                        <h4>@item.Name</h4>
+                                        <h1 class="font-face">@item.Name</h1>
                                         <p>
                                             <b>Current:</b>
-                                            @item.Current
+                                            <span class="font-msg">@item.Current</span>
+                                            
                                         </p>
                                         <p>
                                             @if (!string.IsNullOrEmpty(item.Education))
                                             {
                                                 <b>Education:</b>
-                                                @item.Education
+                                                <span class="font-msg">@item.Education</span> 
                                             }
                                         </p>
                                         <p>
                                             @if (!string.IsNullOrEmpty(item.Previous))
                                             {
                                                 <b>Previous:</b>
-                                                @item.Previous
+                                                <span class="font-msg">@item.Previous</span>
                                             }
                                         </p>                                            
                                     </div>

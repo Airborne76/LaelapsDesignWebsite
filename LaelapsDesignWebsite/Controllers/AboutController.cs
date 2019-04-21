@@ -13,7 +13,7 @@ namespace LaelapsDesignWebsite.Controllers
         {
             List<Teacher> teachers = new List<Teacher>()
             {
-                new Teacher(){Img="/wwwroot/images/About/LliaYu.jpg", Name="Llia Yu",Current="Concept Artist at Blizzard Entertainment & Instructor at Brainstorm School",Education="Art Center College of Design",Previous="Previous: Riot Games"},
+                new Teacher(){Img="/wwwroot/images/About/LliaYu.jpg", Name="Llia Yu",Current="Concept Artist at Blizzard Entertainment & Instructor at Brainstorm School",Education="Art Center College of Design",Previous="Riot Games"},
                 new Teacher(){Img="/wwwroot/images/About/JohnPark.jpg", Name="John Pak",Current="Freelance Artist at Film Union & Founder of Brainstorm School",Education="Art Center College of Design",Previous="20th Century Fox, ILM, Naughty Dog, Sony Games, 343 Industries, Square - Enix, Adhesive Games, Gary Goddard Entertainment Design, Walt Disney Imagineering, etc"},
                 new Teacher(){Img="/wwwroot/images/About/HongLy.jpg",Name="Hong Ly",Current="Concept Designer at Riot Games & Instructor at Art Center College of Design, Otis College of Art and Design",Education="Art Center College of Design",Previous="Naughty Dog, Captive Style, Spark Unlimited, NCSoft, THQ Heavy Iron, Kinesoft, Interplay, Bootprint Entertainment, Gnomon School of Visual Effects, etc"},
                 new Teacher(){Img="/wwwroot/images/About/BenZhang.jpg",Name="Ben Zhang",Current="Lead Concept Artist at Blizzard Entertainment",Previous="ICE, Red 5 Shanghai Studios, Zhuozhi Times"},

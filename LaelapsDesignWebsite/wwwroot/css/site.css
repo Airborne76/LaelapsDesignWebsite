@@ -44,15 +44,13 @@ a:hover, a:active {
 #header{
     padding:30px 0px;    
 }
-.logoContent {
-    
+.logoContent { 
     background-attachment: scroll;
     background-image: url(../images/Home/logo_final.png);
     background-repeat: no-repeat;
     background-size: 300px;
     background-position: left;
     min-height:70px;
-
 }
 #topNav nav {
     position: relative;
@@ -127,6 +125,11 @@ pre, ul, ol, dl {
     background-position: 50%;
     position: relative
 }
+.title-center{
+    text-align:center;
+    display:flex;
+}
+
 #about-header {
     background-attachment: scroll;
     background-image: url(../images/pic1.png);
@@ -161,11 +164,25 @@ pre, ul, ol, dl {
     }
 }
 .about-school-bg {
-    margin: 0;
+    margin-top:20px;
     background: url(../images/About/Laelaps_Location.jpg) no-repeat 50% center;
-    background-size: cover;
+    background-size: 70%;
     min-height: 505px;
 }
+.about-list-block{
+    margin-top:30px;
+    margin-bottom:30px;
+}
+.font-face {
+    font-family: Libre Baskerville;
+    font-weight: 400;
+    font-style: italic;
+}
+.font-msg{
+    font-weight:300;
+    font-size:small;
+}
+
 .px-0 {
     padding-right: 0px !important;
 }
@@ -183,8 +200,8 @@ pre, ul, ol, dl {
     letter-spacing: .01em;
     line-height:27px;
 }
-.font-size-16 {
-    font-size: 16px !important
+.font-size-14 {
+    font-size: 14px !important
 }
 .over_content {
     display: flex
@@ -200,12 +217,17 @@ pre, ul, ol, dl {
 /*Courses*/
 .pic-courses {
     /*max-width: 100%;*/
-    height: 200px;
+    height: 210px;
 }
+.courses-title{
+    margin-top:100px;
+}
+
 .div-relative {
     position: relative;
-    overflow:hidden;
-    min-height: 160px;
+    overflow: hidden;
+    min-height: 220px;
+    border:5px solid black;
 }
 .div-child{
     position:absolute;
@@ -229,21 +251,21 @@ pre, ul, ol, dl {
 .OrangeCallout {
     padding: 15px 22px 15px 22px;
     background-color: #ffffff;
-    border-left: solid 1px #ff9900;
-    border-right: solid 1px #ff9900;
-    border-bottom: solid 1px #ff9900;
+    border-left: solid 2px #000;
+    border-right: solid 2px #000;
+    border-bottom: solid 2px #000;
     font-size: 12px;
-    color: #cc6600;
+    color: #585858;
     font-family: Lucida Grande, Arial
 }
 .OrangeCallout2 {
     padding: 15px 22px 15px 22px;
     background-color: #ffffff;
-    border-left: solid 1px #0ed145;
-    border-right: solid 1px #0ed145;
-    border-bottom: solid 1px #0ed145;
+    border-left: solid 2px #000;
+    border-right: solid 2px #000;
+    border-bottom: solid 2px #000;
     font-size: 12px;
-    color: #0ed145;
+    color: #585858;
     font-family: Lucida Grande, Arial
 }
 .Gallery-link {
