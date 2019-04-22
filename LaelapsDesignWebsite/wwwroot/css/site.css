@@ -118,6 +118,9 @@ pre, ul, ol, dl {
     height: auto;
 }
 
+
+
+
 /*About Page*/
 #about-header, section {
     background-repeat: no-repeat;
@@ -239,6 +242,17 @@ pre, ul, ol, dl {
     font-size: 14px;
     font-family: Titillium Web;
     text-shadow:2px 2px 4px #2f2d2d;
+}
+.div-child-title {
+    position: absolute;
+    top: 10%;
+    color: aliceblue;
+    font-size: 30px;
+    font-family: Microsoft YaHei UI;
+    text-shadow: 2px 2px 4px #2f2d2d;
+}
+
+.small-pic {
 }
 .page-title{
     color:#605c5c;

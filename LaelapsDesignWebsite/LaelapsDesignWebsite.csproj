@@ -344,6 +344,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Contact.cs" />
+    <Compile Include="Models\Course.cs" />
     <Compile Include="Models\ErrorViewModel.cs" />
     <Compile Include="Models\Teacher.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

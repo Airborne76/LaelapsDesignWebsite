@@ -1,15 +1,17 @@
-﻿<br />
+﻿@using LaelapsDesignWebsite.Models;
+<br />
 <section>
     <div class="container">
         <div class="courses-title">
             <div class="row">
 
-                @foreach (var item in ViewData["list"]as Dictionary<string,string>)
+                @foreach (var item in ViewData["list"] as List<Course>)
                 {
                     <div class="col-xs-12 col-sm-6 col-md-3">
                         <div class="pic-inner over_content over_content-centered div-relative ">
-                            <img class="pic-courses div-child" src="@item.Value" />
-                            <p class="div-child-text">@item.Key</p>
+                            <img class="pic-courses div-child" src="@item.Img" />
+                            <p class="div-child-title">@item.Title</p>
+                            <p class="div-child-text">@item.Text</p>
                         </div>
                     </div>
                 }
@@ -17,4 +19,20 @@
         </div>
     </div>
 </section>
+@section Scripts{
+    <script type="text/javascript">
+        $(function () {
+            $(".div-child").each(function () {
+                var _parentWidth = $(this).parent().width();
+                var _width = $(this).width();
+                if (_width < _parentWidth) {
+                    $(this).removeClass("pic-courses");
+                    $(this).width($(this).parent().width());
+                }
+            })
+        });
+    </script>
+}
+
+
 
