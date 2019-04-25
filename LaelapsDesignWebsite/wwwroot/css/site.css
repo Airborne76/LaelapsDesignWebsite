@@ -202,9 +202,13 @@ pre, ul, ol, dl {
     font-family: News706BT-RomanC,Georgia,Times New Roman,Times,serif;
     letter-spacing: .01em;
     line-height:27px;
+    margin-top:40px;
 }
 .font-size-14 {
     font-size: 14px !important
+}
+.font-size-12 {
+    font-size: 12px !important
 }
 .over_content {
     display: flex
@@ -252,6 +256,51 @@ pre, ul, ol, dl {
     text-shadow: 2px 2px 4px #2f2d2d;
 }
 
+.div-child-text-top {
+    position: absolute;
+    top: 45%;
+    color: white;
+    height: 2px;
+    background-color: white;
+    display: block;
+    width: 90%;
+    text-shadow: 2px 2px 4px #2f2d2d;
+}
+.div-child-text-bottom {
+    position: absolute;
+    top: 65%;
+    color: white;
+    height: 2px;
+    background-color: white;
+    display: block;
+    width: 90%;
+    text-shadow: 2px 2px 4px #2f2d2d;
+}
+.div-child-content {
+    position: absolute;
+    top: 40%;
+    height: auto;
+    display: block;
+    width: 90%;
+    text-shadow: 2px 2px 4px #2f2d2d;
+    border-bottom: 3px solid lightgray;
+    border-top: 3px solid lightgray;
+}
+.div-child-content-text {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px #2f2d2d;
+}
+.div-child-content-backgroud{
+    position:absolute;
+    height:100%;
+    width:100%;
+    background-color:gray;
+    opacity:0.3;
+}
+
 .small-pic {
 }
 .page-title{
@@ -259,6 +308,8 @@ pre, ul, ol, dl {
     font-size:48px;
     font-weight:600;
     font-style:normal;
+    margin-top:50px;
+    margin-bottom:50px;
 }
 
 /*GALLERY*/
