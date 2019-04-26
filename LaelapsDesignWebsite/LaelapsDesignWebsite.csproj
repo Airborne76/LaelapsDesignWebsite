@@ -302,6 +302,7 @@
     <Content Include="wwwroot\images\PrortfolioPrep\LOGO-12.png" />
     <Content Include="wwwroot\images\PrortfolioPrep\LOGO-13.png" />
     <Content Include="wwwroot\images\PrortfolioPrep\LOGO-14.png" />
+    <Content Include="wwwroot\images\PrortfolioPrep\LOGO-15.png" />
     <Content Include="wwwroot\images\PrortfolioPrep\LOGO-2.png" />
     <Content Include="wwwroot\images\PrortfolioPrep\LOGO-3.png" />
     <Content Include="wwwroot\images\PrortfolioPrep\LOGO-4.png" />
@@ -311,7 +312,9 @@
     <Content Include="wwwroot\images\PrortfolioPrep\LOGO-8.png" />
     <Content Include="wwwroot\images\PrortfolioPrep\LOGO-9.png" />
     <Content Include="wwwroot\js\site.js" />
-    <Content Include="wwwroot\js\site.min.js" />
+    <Content Include="wwwroot\js\site.min.js">
+      <DependentUpon>site.js</DependentUpon>
+    </Content>
     <Content Include="wwwroot\lib\bootstrap\dist\css\bootstrap-theme.css" />
     <Content Include="wwwroot\lib\bootstrap\dist\css\bootstrap-theme.min.css" />
     <Content Include="wwwroot\lib\bootstrap\dist\css\bootstrap.css" />

@@ -343,8 +343,23 @@ pre, ul, ol, dl {
     margin-bottom:20px
 }
 .Gallery-content-img {
-    height: 200px;
+    height: 200px;   
 }
+.outerdiv-left{
+    position:absolute;
+    display:inline;
+    width:50%;
+    height:100%;
+    text-align:left;
+}
+.outerdiv-right {
+    position: absolute;
+    display: inline;
+    width: 50%;
+    height: 100%;
+    text-align: right;
+}
+
 
 /*Contact*/
 .Contact-Top {
@@ -385,7 +400,9 @@ pre, ul, ol, dl {
     padding-right: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
-    word-wrap: break-word
+    word-wrap: break-word;
+    margin-right:20px;
+        
 }
 .Portfooio-table{
     min-height:80px;
@@ -400,8 +417,9 @@ pre, ul, ol, dl {
     font-weight: 400;
     font-style: normal;
 }
-.Portfooio-img{
-    margin:5px;
+.Portfooio-img {
+    margin: 5px;
+    /*border: 5px solid black;*/
 }
 .Portfooio-content-img {
     height:100px;

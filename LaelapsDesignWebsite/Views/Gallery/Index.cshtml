@@ -1,8 +1,12 @@
-﻿<br  />
-<section>
-    <div class="center-block">
-        <h1 class="text-center page-title">GALLERY</h1>
+﻿<br />
+<div id="outerdiv" style="position:fixed;top:0;left:0;background:rgba(0,0,0,0.7);z-index:2;width:100%;height:100%;display:none;">
+    <div id="innerdiv" style="position:absolute;">
+        <img id="bigimg" style="border:5px solid #fff;" src="" />
     </div>
+    <div class="outerdiv-left"></div>
+    <div class="outerdiv-right"></div>
+</div>
+<section>
     @*<nav class="navbar navbar-default secondary-navbar position-sticky">
             <div class="container-fluid">
                 <ul id="myTab" class="nav navbar-nav text-uppercase font-weight-bold">
@@ -36,7 +40,7 @@
         <div class="tab-pane fade" id="Instructors">
 
         </div>*@
-    <div class="container">
+    <div class="container courses-title">
         <div class="row">
             <div>
                 <div class="col-xs-12 col-sm-6 col-md-6">
@@ -51,13 +55,26 @@
             <div>
                 @foreach (var item in ViewData["list"] as List<string>)
                 {
-                    <div class="col-xs-12 col-sm-6 col-md-6">
-                        <div class="over_content-centered over_content Portfooio-img">
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        @*<div class="over_content-centered over_content Portfooio-img">
                             <img class="Gallery-content-img" src="@item" />
+                            </div>*@
+                        <div class="pic-inner over_content over_content-centered div-relative ">
+                            <img class="pic-courses div-child galley-pic" src="@item" />
                         </div>
                     </div>
                 }
             </div>
-            </div>
         </div>
-</section>   
+    </div>
+</section>
+@section Scripts{
+    <script type="text/javascript">
+        $(function () {
+            $(".galley-pic").click(function () {
+                var _this = $(this);
+                imgShow("#outerdiv", "#innerdiv", "#bigimg", _this);
+            });
+        });
+    </script>
+}
