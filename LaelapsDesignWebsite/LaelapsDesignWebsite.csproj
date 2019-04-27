@@ -117,6 +117,8 @@
     <Content Include="wwwroot\images\Contact\CorporateTitle.gif" />
     <Content Include="wwwroot\images\Contact\CorporateTitle2_black.gif" />
     <Content Include="wwwroot\images\Contact\CorporateTitle_black.gif" />
+    <Content Include="wwwroot\images\Contact\DottedWide.gif" />
+    <Content Include="wwwroot\images\Contact\IconReq.gif" />
     <Content Include="wwwroot\images\Contact\OrangeCap.gif" />
     <Content Include="wwwroot\images\Contact\OrangeCap2.gif" />
     <Content Include="wwwroot\images\Courses\1.png" />

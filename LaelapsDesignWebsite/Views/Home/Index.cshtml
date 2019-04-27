@@ -23,7 +23,7 @@
     <div class="width-full container body-content">
         <div class="row">
             <div class="col-lg-12">
-                <div>
+                <div style="text-align:center">
                     <img class="pic-full" src="~/wwwroot/images/Home/Ben_Zhang.jpg" />
                     <img class="pic-full" src="~/wwwroot/images/Home/john_park.jpg" />
                     <img class="pic-full" src="~/wwwroot/images/Home/LIia_Yu.jpg" />
@@ -88,22 +88,37 @@
     </environment>
 
     <script type="text/javascript">
+        var height = $(window).height();
+        console.log(height);
+        $(".pic-full").css("max-height", height - 60);
+
+        var enabled = true;
         var index = 0;
         var imgs = $(".pic-full");
-        imgs.addClass("hidden");
-        $(imgs[index]).removeClass("hidden");
+        imgs.hide();
+        $(imgs[index]).fadeIn("fast");
         imgs.click(function (i)
-        {
-            imgs.addClass("hidden");
+        {            
+            imgs.fadeOut("fast");
             index++;
             if (index == imgs.length) {
                 index = 0;
             }
-            $(imgs[index]).removeClass("hidden");
-            //$(i.target).addClass("hidden");
-
-            //i.currentTarget.addClass("hidden");
+            $(imgs[index]).fadeIn("fast");
         });
+        window.setInterval(function (i)
+        {
+            enabled = false;
+            imgs.fadeOut("fast");
+            index++;
+            if (index == imgs.length) {
+                index = 0;
+            }
+            $(imgs[index]).fadeIn("fast");
+            enabled = true;
+        }, 8000);
+
+
 
     </script>
 </body>

@@ -26,16 +26,16 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Laelaps Design Academy", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                @Html.ActionLink("Laelaps Design Academy", "Index", "Home", new { area = "" }, new { @class = "navbar-brand navbar-main" })
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("About", "Index", "About")</li>
-                    <li>@Html.ActionLink("Courses", "Index", "Courses")</li>
-                    <li>@Html.ActionLink("PortfolioPrep", "Index", "PortfolioPrep")</li>
-                    <li>@Html.ActionLink("Gallery", "Index", "Gallery")</li>
-                    <li><a href="http://www.laelapsdesign.com" target="_blank">Outsourcing</a></li>
-                    <li>@Html.ActionLink("Contact", "Index", "Contact")</li>                    
+                    <li>@Html.ActionLink("About", "Index", "About",new {@class= "navbar-main" })</li>
+                    <li>@Html.ActionLink("Courses", "Index", "Courses", new { @class = "navbar-main" })</li>
+                    <li>@Html.ActionLink("PortfolioPrep", "Index", "PortfolioPrep", new { @class = "navbar-main" })</li>
+                    <li>@Html.ActionLink("Gallery", "Index", "Gallery", new { @class = "navbar-main" })</li>
+                    <li><a href="http://www.laelapsdesign.com" target="_blank" class="navbar-main">Outsourcing</a></li>
+                    <li>@Html.ActionLink("Contact", "Index", "Contact", new { @class = "navbar-main" })</li>                    
                 </ul>
             </div>
         </div>

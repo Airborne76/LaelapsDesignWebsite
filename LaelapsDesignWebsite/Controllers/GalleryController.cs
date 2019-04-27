@@ -31,6 +31,7 @@ namespace LaelapsDesignWebsite.Controllers
                 students.Add(str);
             }
             ViewData["list"] = students;
+            ViewData["data"] = "students";
             return View("Index");
 
         }
@@ -49,6 +50,7 @@ namespace LaelapsDesignWebsite.Controllers
                 teachers.Add(str);
             }
             ViewData["list"] = teachers;
+            ViewData["data"] = "teachers";
             return View("Index");
 
         }
