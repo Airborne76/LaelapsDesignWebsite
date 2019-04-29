@@ -30,12 +30,12 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("About", "Index", "About",new {@class= "navbar-main" })</li>
-                    <li>@Html.ActionLink("Courses", "Index", "Courses", new { @class = "navbar-main" })</li>
-                    <li>@Html.ActionLink("PortfolioPrep", "Index", "PortfolioPrep", new { @class = "navbar-main" })</li>
-                    <li>@Html.ActionLink("Gallery", "Index", "Gallery", new { @class = "navbar-main" })</li>
+                    <li>@Html.ActionLink("About", "Index", "About", new { area = "" }, new {@class= "navbar-main" })</li>
+                    <li>@Html.ActionLink("Courses", "Index", "Courses", new { area = "" }, new { @class = "navbar-main" })</li>
+                    <li>@Html.ActionLink("PortfolioPrep", "Index", "PortfolioPrep", new { area = "" }, new { @class = "navbar-main" })</li>
+                    <li>@Html.ActionLink("Gallery", "Index", "Gallery", new { area = "" }, new { @class = "navbar-main" })</li>
                     <li><a href="http://www.laelapsdesign.com" target="_blank" class="navbar-main">Outsourcing</a></li>
-                    <li>@Html.ActionLink("Contact", "Index", "Contact", new { @class = "navbar-main" })</li>                    
+                    <li>@Html.ActionLink("Contact", "Index", "Contact", new { area = "" }, new { @class = "navbar-main" })</li>                    
                 </ul>
             </div>
         </div>
