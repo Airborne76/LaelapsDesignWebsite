@@ -2,17 +2,15 @@
     
 }
 
-<nav class="navbar-default secondary-navbar position-sticky title-center">    
-    <div class="container-fluid ">        
-            <ul id="myTab" class="nav navbar-nav text-uppercase">
-                <li class="active">
+<nav class="navbar-default secondary-navbar position-sticky title-center">              
+            <ul id="myTab" class="nav navbar-nav text-uppercase" style="margin:20px 0 0 0;width:100%">
+                <li class="active navbar-li-left">
                     <a data-toggle="tab" aria-expanded="true" href="#About-Laelaps">About  Laelaps</a>
                 </li>
-                <li>
+                <li class="navbar-li-right">
                     <a data-toggle="tab" aria-expanded="false" href="#About-Lnstructors">About  Lnstructors</a>
                 </li>
-            </ul>
-    </div>   
+            </ul>   
 </nav>
 <div class="tab-content" id="content">
     <div class="tab-pane fade in active" id="About-Laelaps">
@@ -58,7 +56,7 @@
                                         <img class="content-img  img-circle" src="@item.Img" />
                                     </header>
                                     <div>
-                                        <h1 class="font-face">@item.Name</h1>
+                                        <h1 class="font-face text-center">@item.Name</h1>
                                         <p>
                                             <b>Current:</b>
                                             <span class="font-msg">@item.Current</span>
