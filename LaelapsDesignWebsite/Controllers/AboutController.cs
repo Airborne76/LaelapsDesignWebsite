@@ -19,6 +19,9 @@ namespace LaelapsDesignWebsite.Controllers
                 new Teacher(){Img="/wwwroot/images/About/BenZhang.jpg",Name="Ben Zhang",Current="Lead Concept Artist at Blizzard Entertainment",Previous="ICE, Red 5 Shanghai Studios, Zhuozhi Times"},
                 new Teacher(){Img="/wwwroot/images/About/QiuFang.jpg",Name="Qiu Fang",Current="Concept Artist at Blizzard Entertainment; Instructor at Brainstorm School",Education="Art Center College of Design"},
                 new Teacher(){Img="/wwwroot/images/About/PaulKwon.jpg",Name="Paul Kwon",Current="Senior Concept Artist at Riot Games",Education="Art Center College of Design",Previous="Blizzard Entertainment"},
+                new Teacher(){Img="/wwwroot/images/About/LucasAnnunziata.jpg",Name="Lucas Annunziata",Current="Environment Artist at Blizzard Entertainment",Education="Champlain College",Previous="Torn Banner Studios, Berserk Entertainment, Codename Games"},
+                new Teacher(){Img="/wwwroot/images/About/K.DStanton Feng.jpg",Name="K.D Stanton Feng",Current="Concept Artist at IO Interactive",Education="Sichuan University",Previous="DMG Media, Perfect World"},
+                new Teacher(){Img="/wwwroot/images/About/MitchAseltine.jpg",Name="Mitch Aseltine",Current="Concept Artist at Scribble Pad Studio",Education="Gnomon, Brainstorm School"}
             };
             ViewData["teachers"] = teachers;
             return View();

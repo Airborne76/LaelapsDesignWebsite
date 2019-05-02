@@ -109,9 +109,12 @@
     <Content Include="wwwroot\images\About\BenZhang.JPG" />
     <Content Include="wwwroot\images\About\HongLy.jpg" />
     <Content Include="wwwroot\images\About\JohnPark.jpg" />
+    <Content Include="wwwroot\images\About\K.DStanton Feng.jpg" />
     <Content Include="wwwroot\images\About\LaelapsLocation.jpg" />
     <Content Include="wwwroot\images\About\Laelaps_Location.jpg" />
     <Content Include="wwwroot\images\About\LliaYu.jpg" />
+    <Content Include="wwwroot\images\About\LucasAnnunziata.jpg" />
+    <Content Include="wwwroot\images\About\MitchAseltine.jpg" />
     <Content Include="wwwroot\images\About\PaulKwon.jpg" />
     <Content Include="wwwroot\images\About\QiuFang.JPG" />
     <Content Include="wwwroot\images\Contact\CorporateTitle.gif" />
