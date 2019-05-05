@@ -4,8 +4,9 @@ body {
     padding-top: 30px;
     padding-bottom: 20px;
 }
+
 .bodyBackGround {
-    background-color:black;
+    background-color: black;
 }
 
 a {
@@ -29,575 +30,588 @@ a:hover {
     color: #60a5dd;
     text-decoration: none
 }
+
 .navbar-main {
     color: #fff !important;
 }
-.navbar-main:hover {
-    color:#9d9d9d  !important;
-}
+
+    .navbar-main:hover {
+        color: #9d9d9d !important;
+    }
 
 @media all and (min-width: 768px) {
     .navbar-right {
         float: right !important;
     }
+
     .navbar-li-left {
         width: 50%;
         float: left;
     }
+
     .navbar-li-right {
         width: 50%;
         float: right;
     }
 }
 
-    a:focus {
-        outline: thin dotted
-    }
+a:focus {
+    outline: thin dotted
+}
 
-    a:hover, a:active {
-        outline: 0
-    }
-    /* Wrapping element */
-    /* Set some basic padding to keep content from hitting the edges */
-    .body-content {
-        padding-left: 15px;
-        padding-right: 15px;
-    }
+a:hover, a:active {
+    outline: 0
+}
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
 
-    .pic-full {
-        max-width: 100%;
-        height: auto;
-    }
+.pic-full {
+    max-width: 100%;
+    height: auto;
+}
 
-    .width-full {
-        width: 100% !important;
-    }
+.width-full {
+    width: 100% !important;
+}
 
-    .headerWrapper {
-        position: fixed;
-        width: 100%;
-        bottom: 20px;
-        background-color: rgba(17,17,17,0.7);
-    }
+.headerWrapper {
+    position: fixed;
+    width: 100%;
+    bottom: 20px;
+    background-color: rgba(17,17,17,0.7);
+}
 
-    #header {
-        padding: 30px 0px;
-    }
+#header {
+    padding: 30px 0px;
+}
 
-    .logoContent {
-        background-attachment: scroll;
-        background-image: url(../images/Home/logo_final_1.png);
-        background-repeat: no-repeat;
-        background-size: 300px;
-        background-position: left;
-        min-height: 70px;
-    }
+.logoContent {
+    background-attachment: scroll;
+    background-image: url(../images/Home/logo_final_1.png);
+    background-repeat: no-repeat;
+    background-size: 300px;
+    background-position: left;
+    min-height: 70px;
+}
 
-    #topNav nav {
+#topNav nav {
+    position: relative;
+    bottom: -3px;
+    margin-top: 0;
+    float: left
+}
+
+    #topNav nav li {
+        display: inline-block;
+        margin-right: 30px;
         position: relative;
-        bottom: -3px;
-        margin-top: 0;
-        float: left
-    }
-
-        #topNav nav li {
-            display: inline-block;
-            margin-right: 30px;
-            position: relative;
-            text-align: right
-        }
-
-    #topNav .main-nav a:hover {
-        color: #fff
-    }
-
-    #topNav .main-nav a, #topNav .main-nav a:visited {
-        color: #aaa
-    }
-
-    #topNav nav li a:hover {
-        color: #000
-    }
-
-    pre, ul, ol, dl {
-        font-family: "Helvetica",arial,sans-serif;
-        font-weight: normal;
-        font-style: normal;
-        line-height: 1.6em;
-        letter-spacing: 0px;
-        margin: 1em 0
-    }
-    /* Carousel */
-    .carousel-caption p {
-        font-size: 20px;
-        line-height: 1.4;
-    }
-
-    /* Make .svg files in the carousel display properly in older browsers */
-    .carousel-inner .item img[src$=".svg"] {
-        width: 100%;
-    }
-
-    /* QR code generator */
-    #qrCode {
-        margin: 15px;
-    }
-
-    /* Hide/rearrange for smaller screens */
-    @media screen and (max-width: 767px) {
-        /* Hide captions */
-        .carousel-caption {
-            display: none;
-        }
-    }
-
-    /*Courses Page*/
-    .content-inner {
-        padding: 20px 8% 100px
-    }
-
-    .pic-inner {
-        margin-top: 5px;
-        margin-bottom: 5px;
-    }
-
-    .pic {
-        max-width: 90%;
-        height: auto;
-    }
-
-
-
-
-    /*About Page*/
-    #about-header, section {
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: 50%;
-        position: relative
-    }
-
-    .title-center {
-        text-align: center;
-        display: flex;
-    }
-
-    #about-header {
-        background-attachment: scroll;
-        background-image: url(../images/pic1.png);
-        background-repeat: no-repeat;
-        background-size: 100%;
-        background-position: center;
-    }
-
-    #content {
-        margin-top: 5px;
-    }
-
-    .my-xl-6 {
-        margin-top: 4.5rem !important;
-        margin-bottom: 4.5rem !important
-    }
-
-    .secondary-navbar {
-        z-index: 600;
-        border: none;
-        min-height: 50px;
-    }
-
-
-    .position-sticky {
-        top: 50px;
-        position: sticky;
-    }
-
-    .font-weight-bold {
-        font-weight: 700
-    }
-
-    @media (min-width:992px) {
-        .d-md-flex {
-            display: flex !important;
-        }
-    }
-
-    .about-school-bg {
-        margin-top: 80px;
-        background: url(../images/About/Laelaps_Location.jpg) no-repeat 50% center;
-        background-size: 100%;
-        min-height: 505px;
-    }
-
-    .about-list-block {
-        margin-top: 30px;
-        margin-bottom: 30px;
-        min-height:400px;
-    }
-
-    .font-face {
-        font-family: Libre Baskerville;
-        font-weight: 600;
-        font-style: italic;
-        font-size:22.5px;
-    }
-
-    .font-msg {
-        font-weight: 300;
-        font-size: small;
-    }
-
-    .px-0 {
-        padding-right: 0px !important;
-    }
-
-    .px-lg-6 {
-        padding-left: 4.5rem !important;
-    }
-
-    .mt-5 {
-        margin-top: 3rem !important;
-    }
-
-    .divcss {
-        word-wrap: break-word
-    }
-
-    .text_card {
-        font-family: News706BT-RomanC,Georgia,Times New Roman,Times,serif;
-        letter-spacing: .01em;
-        line-height: 27px;
-        margin-top: 40px;
-    }
-
-    .font-size-14 {
-        font-size: 14px !important
-    }
-
-    .font-size-12 {
-        font-size: 12px !important
-    }
-
-    .over_content {
-        display: flex
-    }
-
-    .over_content-centered {
-        justify-content: center
-    }
-
-    .content-img {
-        /*max-width: 50%;*/
-        height: 150px;
-    }
-
-    /*Courses*/
-    .pic-courses {
-        /*max-width: 100%;*/
-        height: 210px;
-    }
-
-    .courses-title {
-        margin-top: 100px;
-    }
-
-    .div-relative {
-        position: relative;
-        overflow: hidden;
-        min-height: 220px;
-        border: 5px solid black;
-    }
-
-    .div-child {
-        position: absolute;
-    }
-
-    .div-child-text {
-        position: absolute;
-        top: 50%;
-        color: aliceblue;
-        font-size: 14px;
-        font-family: Titillium Web;
-        text-shadow: 2px 2px 4px #2f2d2d;
-    }
-
-    .div-child-title {
-        position: absolute;
-        top: 10%;
-        color: aliceblue;
-        font-size: 30px;
-        font-family: Microsoft YaHei UI;
-        text-shadow: 2px 2px 4px #2f2d2d;
-    }
-
-    .div-child-text-top {
-        position: absolute;
-        top: 45%;
-        color: white;
-        height: 2px;
-        background-color: white;
-        display: block;
-        width: 90%;
-        text-shadow: 2px 2px 4px #2f2d2d;
-    }
-
-    .div-child-text-bottom {
-        position: absolute;
-        top: 65%;
-        color: white;
-        height: 2px;
-        background-color: white;
-        display: block;
-        width: 90%;
-        text-shadow: 2px 2px 4px #2f2d2d;
-    }
-
-    .div-child-content {
-        position: absolute;
-        top: 40%;
-        height: auto;
-        display: block;
-        width: 90%;
-        text-shadow: 2px 2px 4px #2f2d2d;
-        border-bottom: 3px solid lightgray;
-        border-top: 3px solid lightgray;
-    }
-
-    .div-child-content-text {
-        margin-top: 10px;
-        margin-bottom: 10px;
-        text-align: center;
-        color: white;
-        text-shadow: 2px 2px 4px #2f2d2d;
-    }
-
-    .div-child-content-backgroud {
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        background-color: gray;
-        opacity: 0.3;
-    }
-
-    .small-pic {
-    }
-
-    .page-title {
-        color: #605c5c;
-        font-size: 48px;
-        font-weight: 600;
-        font-style: normal;
-        margin-top: 50px;
-        margin-bottom: 50px;
-    }
-
-    /*GALLERY*/
-    .OrangeCallout {
-        padding: 15px 22px 15px 22px;
-        background-color: #ffffff;
-        border-left: solid 2px #000;
-        border-right: solid 2px #000;
-        border-bottom: solid 2px #000;
-        font-size: 12px;
-        color: #585858;
-        font-family: Lucida Grande, Arial
-    }
-
-    .OrangeCallout2 {
-        padding: 15px 22px 15px 22px;
-        background-color: #ffffff;
-        border-left: solid 2px #000;
-        border-right: solid 2px #000;
-        border-bottom: solid 2px #000;
-        font-size: 12px;
-        color: #585858;
-        font-family: Lucida Grande, Arial
-    }
-
-    .Gallery-link {
-        display: block;
-        color: #605c5c;
-        font-size: 22px;
-        font-weight: 400;
-        font-style: normal;
-        margin-top: 20px;
-        margin-bottom: 20px
-    }
-
-    .Gallery-content-img {
-        height: 200px;
-    }
-
-    .outerdiv-left {
-        position: absolute;
-        width: 20%;
-        height: 100%;
-        left: 0px;
-    }
-
-    .outerdiv-right {
-        position: absolute;
-        width: 20%;
-        height: 100%;
-        right: 0px;
-    }
-
-    .outerdiv-close {
-        font-family: "squarespace-ui-font";
-        content: "\E02E";
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        color: white;
-        cursor: pointer;
-        text-align: center;
-        margin: 10px;
-        font-size: 32px;
-        width: 50px;
-    }
-
-    .galley-link-selected::after {
-        content: "";
-        display: block;
-        height: 5px;
-        width: 10%;
-        background-color: #aaa;
-        height: 2px;
-        bottom: 3px;
-        left: 50%;
-        margin-left: 45%;
-    }
-
-    .galley-link-noSelected::after {
-        content: "";
-        display: block;
-        height: 5px;
-        width: 10%;
-        background-color: transparent;
-        height: 2px;
-        bottom: 3px;
-        left: 50%;
-        margin-left: 45%;
-    }
-
-
-    /*Contact*/
-    .Contact-Top {
-        margin-top: 60px;
-    }
-
-    .Contact-block {
-        width: 285px;
-    }
-
-    .line-block {
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-
-        .line-block .line {
-            border-bottom: solid 1px #dcdcdc;
-        }
-
-    .require-star {
-        color: red;
-        margin-left: 3px;
-    }
-
-    /*PORTFOLIO-PREP*/
-    .Portfooio-title {
-        font-family: "Source Sans Pro";
-        font-size: 60px;
-        font-weight: 200;
-    }
-
-    .Portfooio-Center {
-        margin-top: 20px;
-    }
-
-    .Portfooio-text-list {
-        font-family: "Source Sans Pro";
-        letter-spacing: .01em;
-        font-size: 16px;
-        line-height: 27px;
-        font-weight: 700;
-        padding-right: 10px;
-        padding-right: 10px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        word-wrap: break-word;
-        margin-right: 20px;
-    }
-
-    .Portfooio-table {
-        min-height: 80px;
-    }
-
-    .field-validation-error {
-        color: red;
-    }
-
-    .Portfooio-school-title {
-        font-family: "Source Sans Pro";
-        font-size: 32px;
-        font-weight: 400;
-        font-style: normal;
-    }
-
-    .Portfooio-img {
-        margin: 5px;
-        /*border: 5px solid black;*/
-    }
-
-    .Portfooio-content-img {
-        height: 100px;
-    }
-
-    .Fields {
-        font-size: 12px;
-        color: #333333;
-        font-family: Lucida Grande, Arial;
-        width: 175px
-    }
-
-    .FieldTitle {
-        font-size: 12px;
-        color: #666666;
-        font-family: Lucida Grande, Arial;
-        font-weight: bold;
-        white-space: nowrap;
-        text-align: left;
-        vertical-align: middle
-    }
-
-    .FieldArea {
-        text-align: left;
-        vertical-align: middle;
-        padding-top: 1px;
-        padding-bottom: 1px
-    }
-
-    .FieldReq {
-        text-align: left;
-        vertical-align: middle;
-        padding-left: 5px;
-        padding-right: 5px
-    }
-
-    div.Body {
-        margin-bottom: 10px;
-        font-size: 12px;
-        color: #666666;
-        font-family: Arial;
-        text-align: justify
-    }
-
-    .text-warn {
-        color: red;
-    }
-
-
+        text-align: right
+    }
+
+#topNav .main-nav a:hover {
+    color: #fff
+}
+
+#topNav .main-nav a, #topNav .main-nav a:visited {
+    color: #aaa
+}
+
+#topNav nav li a:hover {
+    color: #000
+}
+
+pre, ul, ol, dl {
+    font-family: "Helvetica",arial,sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1.6em;
+    letter-spacing: 0px;
+    margin: 1em 0
+}
+/* Carousel */
+.carousel-caption p {
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+/* Make .svg files in the carousel display properly in older browsers */
+.carousel-inner .item img[src$=".svg"] {
+    width: 100%;
+}
+
+/* QR code generator */
+#qrCode {
+    margin: 15px;
+}
+
+/* Hide/rearrange for smaller screens */
+@media screen and (max-width: 767px) {
+    /* Hide captions */
+    .carousel-caption {
+        display: none;
+    }
+}
+
+/*Courses Page*/
+.content-inner {
+    padding: 20px 8% 100px
+}
+
+.pic-inner {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.pic {
+    max-width: 90%;
+    height: auto;
+}
+
+
+
+
+/*About Page*/
+#about-header, section {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    position: relative
+}
+
+.title-center {
+    text-align: center;
+    display: flex;
+}
+
+#about-header {
+    background-attachment: scroll;
+    background-image: url(../images/pic1.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+#content {
+    margin-top: 5px;
+}
+
+.my-xl-6 {
+    margin-top: 4.5rem !important;
+    margin-bottom: 4.5rem !important
+}
+
+.secondary-navbar {
+    z-index: 600;
+    border: none;
+    min-height: 50px;
+}
+
 
-    /*Home*/
+.position-sticky {
+    top: 50px;
+    position: sticky;
+}
+
+.font-weight-bold {
+    font-weight: 700
+}
+
+@media (min-width:992px) {
+    .d-md-flex {
+        display: flex !important;
+    }
+}
+
+.about-school-bg {
+    margin-top: 80px;
+    background: url(../images/About/Laelaps_Location.jpg) no-repeat 50% center;
+    background-size: 100%;
+    min-height: 505px;
+}
+
+.about-list-block {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    min-height: 400px;
+}
+
+.font-face {
+    font-family: Libre Baskerville;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 27px;
+}
+
+.font-msg {
+    font-weight: 300;
+    font-size: small;
+}
+
+.px-0 {
+    padding-right: 0px !important;
+}
+
+.px-lg-6 {
+    padding-left: 4.5rem !important;
+}
+
+.mt-5 {
+    margin-top: 3rem !important;
+}
+
+.divcss {
+    word-wrap: break-word
+}
+
+.text_card {
+    font-family: News706BT-RomanC,Georgia,Times New Roman,Times,serif;
+    letter-spacing: .01em;
+    line-height: 27px;
+    margin-top: 40px;
+}
+
+.font-size-14 {
+    font-size: 14px !important
+}
+
+.font-size-12 {
+    font-size: 12px !important
+}
+
+.over_content {
+    display: flex
+}
+
+.over_content-centered {
+    justify-content: center
+}
+
+.content-img {
+    /*max-width: 50%;*/
+    height: 150px;
+}
+
+/*Courses*/
+.pic-courses {
+    /*max-width: 100%;*/
+    height: 210px;
+}
+
+.courses-title {
+    margin-top: 50px;
+}
+
+.div-relative {
+    position: relative;
+    overflow: hidden;
+    min-height: 220px;
+    border: 5px solid black;
+}
+
+.div-child {
+    position: absolute;
+}
+
+.div-child-text {
+    position: absolute;
+    top: 50%;
+    color: aliceblue;
+    font-size: 14px;
+    font-family: Titillium Web;
+    text-shadow: 2px 2px 4px #2f2d2d;
+}
+
+.div-child-title {
+    position: absolute;
+    top: 10%;
+    color: aliceblue;
+    font-size: 30px;
+    font-family: Microsoft YaHei UI;
+    text-shadow: 2px 2px 4px #2f2d2d;
+    z-index:9;
+}
+
+.div-child-img {
+    position: absolute;
+    top: 70%;
+    width: 80%;
+    max-width: 200px;
+}
+
+.div-child-text-top {
+    position: absolute;
+    top: 45%;
+    color: white;
+    height: 2px;
+    background-color: white;
+    display: block;
+    width: 90%;
+    text-shadow: 2px 2px 4px #2f2d2d;
+}
+
+.div-child-text-bottom {
+    position: absolute;
+    top: 65%;
+    color: white;
+    height: 2px;
+    background-color: white;
+    display: block;
+    width: 90%;
+    text-shadow: 2px 2px 4px #2f2d2d;
+}
+
+.div-child-content {
+    position: absolute;
+    top: 40%;
+    height: auto;
+    display: block;
+    width: 90%;
+    text-shadow: 2px 2px 4px #2f2d2d;
+    border-bottom: 3px solid white;
+    border-top: 3px solid white;
+    z-index: 9;
+}
+
+.div-child-content-text {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px #2f2d2d;
+}
+
+.div-child-content-backgroud {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: gray;
+    opacity: 0.3;
+}
+
+.small-pic {
+}
+
+.page-title {
+    color: #605c5c;
+    font-size: 48px;
+    font-weight: 600;
+    font-style: normal;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/*GALLERY*/
+.OrangeCallout {
+    padding: 15px 22px 15px 22px;
+    background-color: #ffffff;
+    border-left: solid 2px #000;
+    border-right: solid 2px #000;
+    border-bottom: solid 2px #000;
+    font-size: 12px;
+    color: #585858;
+    font-family: Lucida Grande, Arial
+}
+
+.OrangeCallout2 {
+    padding: 15px 22px 15px 22px;
+    background-color: #ffffff;
+    border-left: solid 2px #000;
+    border-right: solid 2px #000;
+    border-bottom: solid 2px #000;
+    font-size: 12px;
+    color: #585858;
+    font-family: Lucida Grande, Arial
+}
+
+.Gallery-link {
+    display: block;
+    color: #605c5c;
+    font-size: 22px;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 20px;
+    margin-bottom: 20px
+}
+
+.Gallery-content-img {
+    height: 200px;
+}
+
+.outerdiv-left {
+    position: absolute;
+    width: 20%;
+    height: 100%;
+    left: 0px;
+}
+
+.outerdiv-right {
+    position: absolute;
+    width: 20%;
+    height: 100%;
+    right: 0px;
+}
+
+.outerdiv-close {
+    font-family: "squarespace-ui-font";
+    content: "\E02E";
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    margin: 10px;
+    font-size: 32px;
+    width: 50px;
+}
+
+.galley-link-selected::after {
+    content: "";
+    display: block;
+    height: 5px;
+    width: 10%;
+    background-color: #aaa;
+    height: 2px;
+    bottom: 3px;
+    left: 50%;
+    margin-left: 45%;
+}
+
+.galley-link-noSelected::after {
+    content: "";
+    display: block;
+    height: 5px;
+    width: 10%;
+    background-color: transparent;
+    height: 2px;
+    bottom: 3px;
+    left: 50%;
+    margin-left: 45%;
+}
+
+
+/*Contact*/
+.Contact-Top {
+    margin-top: 60px;
+}
+
+.Contact-block {
+    width: 285px;
+}
+
+.line-block {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+    .line-block .line {
+        border-bottom: solid 1px #dcdcdc;
+    }
+
+.require-star {
+    color: red;
+    margin-left: 3px;
+}
+
+/*PORTFOLIO-PREP*/
+.Portfooio-title {
+    font-family: "Source Sans Pro";
+    font-size: 60px;
+    font-weight: 200;
+}
+
+.Portfooio-Center {
+    margin-top: 20px;
+}
+
+.Portfooio-text-list {
+    font-family: "Source Sans Pro";
+    letter-spacing: .01em;
+    font-size: 16px;
+    line-height: 27px;
+    font-weight: 700;
+    padding-right: 10px;
+    padding-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    word-wrap: break-word;
+    margin-right: 20px;
+}
+
+.Portfooio-table {
+    min-height: 80px;
+}
+
+.field-validation-error {
+    color: red;
+}
+
+.Portfooio-school-title {
+    font-family: "Source Sans Pro";
+    font-size: 32px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.Portfooio-img {
+    margin: 5px;
+    /*border: 5px solid black;*/
+}
+
+.Portfooio-content-img {
+    height: 100px;
+}
+
+.Fields {
+    font-size: 12px;
+    color: #333333;
+    font-family: Lucida Grande, Arial;
+    width: 175px
+}
+
+.FieldTitle {
+    font-size: 12px;
+    color: #666666;
+    font-family: Lucida Grande, Arial;
+    font-weight: bold;
+    white-space: nowrap;
+    text-align: left;
+    vertical-align: middle
+}
+
+.FieldArea {
+    text-align: left;
+    vertical-align: middle;
+    padding-top: 1px;
+    padding-bottom: 1px
+}
+
+.FieldReq {
+    text-align: left;
+    vertical-align: middle;
+    padding-left: 5px;
+    padding-right: 5px
+}
+
+div.Body {
+    margin-bottom: 10px;
+    font-size: 12px;
+    color: #666666;
+    font-family: Arial;
+    text-align: justify
+}
+
+.text-warn {
+    color: red;
+}
+
+
+
+/*Home*/
 
 
 

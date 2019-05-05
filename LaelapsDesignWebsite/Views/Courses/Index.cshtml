@@ -4,7 +4,6 @@
     <div class="container">
         <div class="courses-title">
             <div class="row">
-
                 @foreach (var item in ViewData["list"] as List<Course>)
                 {
                     <div class="col-xs-12 col-sm-6 col-md-3">
@@ -14,6 +13,8 @@
                             <div class="div-child-content">
                                 <p class="div-child-content-text">@item.Text</p>
                             </div>
+                            <img class="div-child-img" src="~/wwwroot/images/Home/logo final_1.png" />
+
 
                             <div class="div-child-content-backgroud">
 

@@ -28,7 +28,8 @@ namespace LaelapsDesignWebsite.Controllers
                 "/wwwroot/images/PrortfolioPrep/LOGO-11.png",
                 "/wwwroot/images/PrortfolioPrep/LOGO-12.png",
                 "/wwwroot/images/PrortfolioPrep/LOGO-13.png",
-                "/wwwroot/images/PrortfolioPrep/LOGO-14.png"
+                "/wwwroot/images/PrortfolioPrep/LOGO-14.png",
+                "/wwwroot/images/PrortfolioPrep/LOGO-15.png"
             };
             ViewData["list"] = PortfolioPrep;
             return View();
