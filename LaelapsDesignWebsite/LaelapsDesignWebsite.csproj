@@ -120,6 +120,8 @@
     <Content Include="wwwroot\images\Contact\CorporateTitle.gif" />
     <Content Include="wwwroot\images\Contact\CorporateTitle2_black.gif" />
     <Content Include="wwwroot\images\Contact\CorporateTitle_black.gif" />
+    <Content Include="wwwroot\images\Contact\CorporateTitle_black2.gif" />
+    <Content Include="wwwroot\images\Contact\CorporateTitle_black3.gif" />
     <Content Include="wwwroot\images\Contact\DottedWide.gif" />
     <Content Include="wwwroot\images\Contact\IconReq.gif" />
     <Content Include="wwwroot\images\Contact\OrangeCap.gif" />
@@ -296,12 +298,11 @@
     <Content Include="wwwroot\images\Home\Ben_Zhang.jpg" />
     <Content Include="wwwroot\images\Home\john_park.jpg" />
     <Content Include="wwwroot\images\Home\LIia_Yu.jpg" />
-    <Content Include="wwwroot\images\Home\logo final_1.png" />
+    <Content Include="wwwroot\images\Home\logo_final_1.png" />
     <Content Include="wwwroot\images\Home\logo.png" />
     <Content Include="wwwroot\images\Home\logo_final.png" />
     <Content Include="wwwroot\images\Home\Qiu_fang.jpg" />
     <Content Include="wwwroot\images\Home\Zeronis.jpg" />
-    <Content Include="wwwroot\images\pic1.png" />
     <Content Include="wwwroot\images\PrortfolioPrep\LOGO-1.png" />
     <Content Include="wwwroot\images\PrortfolioPrep\LOGO-10.png" />
     <Content Include="wwwroot\images\PrortfolioPrep\LOGO-11.png" />

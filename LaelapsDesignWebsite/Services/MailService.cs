@@ -49,6 +49,7 @@ namespace LaelapsDesignWebsite.Services
                     client.ServerCertificateValidationCallback = (s, c, h, e) => true;
                     client.Connect("smtp.office365.com", 587, false);
                     client.Authenticate("LaelapsDesignQA@hotmail.com", "lliallia666");
+                    //client.Authenticate("qweasdz76@live.com", "qwe12345as123");
                     client.Send(message);
                     client.Disconnect(true);
                 }

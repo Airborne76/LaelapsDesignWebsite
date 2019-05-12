@@ -7,6 +7,7 @@ body {
 
 .bodyBackGround {
     background-color: black;
+    padding:0px;
 }
 
 a {
@@ -93,7 +94,7 @@ a:hover, a:active {
     background-attachment: scroll;
     background-image: url(../images/Home/logo_final_1.png);
     background-repeat: no-repeat;
-    background-size: 300px;
+    background-size: 250px;
     background-position: left;
     min-height: 70px;
 }
@@ -271,7 +272,7 @@ pre, ul, ol, dl {
     font-family: News706BT-RomanC,Georgia,Times New Roman,Times,serif;
     letter-spacing: .01em;
     line-height: 27px;
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 .font-size-14 {
@@ -396,7 +397,7 @@ pre, ul, ol, dl {
 }
 
 .page-title {
-    color: #605c5c;
+    color: black;
     font-size: 48px;
     font-weight: 600;
     font-style: normal;
@@ -405,6 +406,11 @@ pre, ul, ol, dl {
 }
 
 /*GALLERY*/
+.galley-title{
+    margin-top:30px;
+}
+
+
 .OrangeCallout {
     padding: 15px 22px 15px 22px;
     background-color: #ffffff;
@@ -414,6 +420,13 @@ pre, ul, ol, dl {
     font-size: 12px;
     color: #585858;
     font-family: Lucida Grande, Arial
+}
+
+.galley-div-relative {
+    position: relative;
+    overflow: hidden;
+    min-height: 220px;
+    cursor:pointer;
 }
 
 .OrangeCallout2 {
@@ -426,12 +439,17 @@ pre, ul, ol, dl {
     color: #585858;
     font-family: Lucida Grande, Arial
 }
+.Gallery-link-top{
+    margin-bottom:30px;
+    margin-top:30px;
+}
+
 
 .Gallery-link {
     display: block;
     color: #605c5c;
-    font-size: 22px;
-    font-weight: 400;
+    font-size: 26px;
+    font-weight: 500;
     font-style: normal;
     margin-top: 20px;
     margin-bottom: 20px
@@ -443,14 +461,14 @@ pre, ul, ol, dl {
 
 .outerdiv-left {
     position: absolute;
-    width: 20%;
+    width: 40%;
     height: 100%;
     left: 0px;
 }
 
 .outerdiv-right {
     position: absolute;
-    width: 20%;
+    width: 40%;
     height: 100%;
     right: 0px;
 }
@@ -467,6 +485,13 @@ pre, ul, ol, dl {
     margin: 10px;
     font-size: 32px;
     width: 50px;
+}
+
+.galley-link-selected{
+    color:black;
+}
+.galley-link-noSelected {
+    color: gray;
 }
 
 .galley-link-selected::after {
@@ -534,16 +559,19 @@ pre, ul, ol, dl {
     font-size: 16px;
     line-height: 27px;
     font-weight: 700;
-    padding-right: 10px;
-    padding-right: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
     word-wrap: break-word;
-    margin-right: 20px;
+}
+
+.Portfooio-point {
+    font-weight:500;
+    font-size:20px;
 }
 
 .Portfooio-table {
-    min-height: 80px;
+    min-height: 50px;
+    text-align:left;
 }
 
 .field-validation-error {
@@ -551,10 +579,9 @@ pre, ul, ol, dl {
 }
 
 .Portfooio-school-title {
-    font-family: "Source Sans Pro";
+    font-family: Arial;
     font-size: 32px;
-    font-weight: 400;
-    font-style: normal;
+    font-weight: 600;
 }
 
 .Portfooio-img {

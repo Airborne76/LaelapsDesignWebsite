@@ -15,7 +15,8 @@ namespace LaelapsDesignWebsite.Controllers
     {
         // GET: /<controller>/
         public ActionResult Index()
-        {            
+        {
+            ViewData["msg"] = "";
             return View();
         }
         public ActionResult Submit(Contact model)
@@ -30,20 +31,23 @@ namespace LaelapsDesignWebsite.Controllers
                 sb.Append($"state: {model.state}. <br />");
                 sb.Append($"zipCode: {model.zipCode}. <br />");
                 sb.Append($"email: {model.email}. <br />");
+                sb.Append($"phone: {model.phone}. <br />");
                 sb.Append($"questions: {model.questions}. <br />");
                 string message = sb.ToString();
                 if (MailService.GetInstance().SendMail(message))
                 {
+                    ViewData["msg"] = "Message send";
                     return View("Index");
                 }
                 else
                 {
-                    ViewData["error"] = "Error: Please try later";
+                    ViewData["msg"] = "Error: Please try later";
                     return View("Index");
                 }                
             }
             else
             {
+                ViewData["msg"] = "";
                 return View("Index");
             }
         }

@@ -19,6 +19,9 @@ namespace LaelapsDesignWebsite.Models
         public string zipCode { get; set; }
         [Required(ErrorMessage = "Enter Email")]
         public string email { get; set; }
+        [Required(ErrorMessage ="Enter Phone")]
+        [Phone(ErrorMessage = "Format error")]
+        public string phone { get; set; }
         public string questions { get; set; }
 
     }
