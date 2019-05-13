@@ -183,6 +183,11 @@ pre, ul, ol, dl {
     position: relative
 }
 
+.about-tab {
+    font-weight: 600;
+    font-size:16px;
+}
+
 .title-center {
     text-align: center;
     display: flex;
@@ -230,7 +235,7 @@ pre, ul, ol, dl {
 .about-school-bg {
     margin-top: 80px;
     background: url(../images/About/Laelaps_Location.jpg) no-repeat 50% center;
-    background-size: 100%;
+    background-size: 80%;
     min-height: 505px;
 }
 
@@ -239,6 +244,11 @@ pre, ul, ol, dl {
     margin-bottom: 30px;
     min-height: 400px;
 }
+
+.about-msg{
+    margin-bottom:20px;
+}
+
 
 .font-face {
     font-family: Libre Baskerville;
@@ -339,7 +349,7 @@ pre, ul, ol, dl {
 .div-child-img {
     position: absolute;
     top: 70%;
-    width: 80%;
+    width: 50%;
     max-width: 200px;
 }
 
@@ -401,7 +411,7 @@ pre, ul, ol, dl {
     font-size: 48px;
     font-weight: 600;
     font-style: normal;
-    margin-top: 50px;
+    margin-top: 80px;
     margin-bottom: 50px;
 }
 
@@ -414,9 +424,9 @@ pre, ul, ol, dl {
 .OrangeCallout {
     padding: 15px 22px 15px 22px;
     background-color: #ffffff;
-    border-left: solid 2px #000;
-    border-right: solid 2px #000;
-    border-bottom: solid 2px #000;
+    border-left: solid 2px #313131;
+    border-right: solid 2px #313131;
+    border-bottom: solid 2px #313131;
     font-size: 12px;
     color: #585858;
     font-family: Lucida Grande, Arial
@@ -432,9 +442,9 @@ pre, ul, ol, dl {
 .OrangeCallout2 {
     padding: 15px 22px 15px 22px;
     background-color: #ffffff;
-    border-left: solid 2px #000;
-    border-right: solid 2px #000;
-    border-bottom: solid 2px #000;
+    border-left: solid 2px #313131;
+    border-right: solid 2px #313131;
+    border-bottom: solid 2px #313131;
     font-size: 12px;
     color: #585858;
     font-family: Lucida Grande, Arial

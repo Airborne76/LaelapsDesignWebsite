@@ -335,34 +335,30 @@
                     </form>
 
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-6">
-                    <div class="Contact-block">
-                        <div>
-                            <img src="~/wwwroot/images/Contact/CorporateTitle_black2.gif"  /><br />
+                <div class="col-xs-12 col-sm-6 col-md-6 rightpane" style="display:flex;align-items:center;justify-content:center">                    
+                    <div>
+                        <div class="Contact-block" style="margin-top:20px">
+                            <div>
+                                <img src="~/wwwroot/images/Contact/web-us.png" style="max-width:100%" /><br />
+                            </div>
+                            <div class="OrangeCallout">
+                                <b>Laelaps Design Academy</b><br />
+                                13355 Michaelson Dr<br />
+                                Irvine, CA 92612, United States<br /><br />
+                                <b>(001) 602-386-9370</b> Telephone<br />
+                                <a class="Orange" href="mailto:admission@laelapsdesign.com">admission@laelapsdesign.com</a><br />
+                            </div>
                         </div>
-                        <div class="OrangeCallout">
-                            <b>Laelaps Design Academy</b><br />
-                            13355 Michaelson Dr<br />
-                            Irvine, CA 92612, United States<br /><br />
-                            <b>(001) 602-386-9370</b> Telephone<br />
-                            <a class="Orange" href="mailto:admission@laelapsdesign.com">admission@laelapsdesign.com</a><br />
+                        <div class="Contact-block" style="margin-top:20px">
+                            <div>
+                                <img src="~/wwwroot/images/Contact/web-china.png" style="max-width:100%" /><br />
+                            </div>
+                            <div class="OrangeCallout2">
+                                <b>Laelaps Education & Technology Co., Ltd</b><br />
+                                C216, 300 Zhihui Road<br />
+                                Nanjing, JS 211135, P.R. China<br /><br />
+                            </div>
                         </div>
-                        @*<div>
-                                <img src="~/images/Contact/OrangeCap.gif" width="285" height="10" />
-                            </div>*@
-                    </div>
-                    <div class="Contact-block" style="margin-top:20px">
-                        <div>
-                            <img src="~/wwwroot/images/Contact/CorporateTitle_black3.gif" /><br />
-                        </div>
-                        <div class="OrangeCallout2">
-                            <b>Laelaps Education & Technology Co., Ltd</b><br />
-                            C216, 300 Zhihui Road<br />
-                            Nanjing, JS 211135, P.R. China<br /><br />
-                        </div>
-                        @*<div>
-                                <img src="~/images/Contact/OrangeCap2.gif" width="285" height="10" /><br />
-                            </div>*@
                     </div>
                 </div>
             </div>
@@ -377,6 +373,8 @@
                 var msg = '@ViewData["msg"].ToString()';
                 alert(msg);                
             }
+            $(".rightpane").height($(".row").height());
+
         })
     </script>
 }

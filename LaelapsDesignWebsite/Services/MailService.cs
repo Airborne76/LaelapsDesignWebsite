@@ -1,7 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
+using System.Web.Helpers;
+using LaelapsDesignWebsite.Models;
 using MailKit;
 using MailKit.Net.Smtp;
 using MimeKit;
@@ -11,11 +15,13 @@ namespace LaelapsDesignWebsite.Services
     public class MailService
     {
         private static MailService uniqueInstance;
+        private EmailMessage emailMessage;
+
         private static readonly object locker = new object();
         private MailService()
         {
-
-        }
+            
+        }         
         public static MailService GetInstance()
         {
             if (uniqueInstance == null)
@@ -26,6 +32,10 @@ namespace LaelapsDesignWebsite.Services
                     {
                         uniqueInstance = new MailService();
                     }
+                    //if (uniqueInstance.emailMessage == null)
+                    //{
+
+                    //}
                 }
             }
             return uniqueInstance;
@@ -52,6 +62,7 @@ namespace LaelapsDesignWebsite.Services
                     //client.Authenticate("qweasdz76@live.com", "qwe12345as123");
                     client.Send(message);
                     client.Disconnect(true);
+                    
                 }
             }
             catch (Exception ex)

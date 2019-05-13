@@ -5,10 +5,10 @@
 <nav class="navbar-default secondary-navbar position-sticky title-center">              
             <ul id="myTab" class="nav navbar-nav text-uppercase" style="margin:20px 0 0 0;width:100%">
                 <li class="active navbar-li-left">
-                    <a data-toggle="tab" aria-expanded="true" href="#About-Laelaps">About  Laelaps</a>
+                    <a data-toggle="tab" aria-expanded="true" href="#About-Laelaps" class="about-tab">About  Laelaps</a>
                 </li>
                 <li class="navbar-li-right">
-                    <a data-toggle="tab" aria-expanded="false" href="#About-Lnstructors">About  Lnstructors</a>
+                    <a data-toggle="tab" aria-expanded="false" href="#About-Lnstructors" class="about-tab">About  Instructors</a>
                 </li>
             </ul>   
 </nav>
@@ -57,19 +57,19 @@
                                     </header>
                                     <div>
                                         <h1 class="font-face text-center">@item.Name</h1>
-                                        <p>
+                                        <p class="about-msg">
                                             <b>Current:</b>
                                             <span class="font-msg">@item.Current</span>
                                             
                                         </p>
-                                        <p>
+                                        <p class="about-msg">
                                             @if (!string.IsNullOrEmpty(item.Education))
                                             {
                                                 <b>Education:</b>
                                                 <span class="font-msg">@item.Education</span> 
                                             }
                                         </p>
-                                        <p>
+                                        <p class="about-msg">
                                             @if (!string.IsNullOrEmpty(item.Previous))
                                             {
                                                 <b>Previous:</b>

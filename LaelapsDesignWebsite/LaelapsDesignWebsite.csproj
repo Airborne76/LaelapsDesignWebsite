@@ -122,10 +122,15 @@
     <Content Include="wwwroot\images\Contact\CorporateTitle_black.gif" />
     <Content Include="wwwroot\images\Contact\CorporateTitle_black2.gif" />
     <Content Include="wwwroot\images\Contact\CorporateTitle_black3.gif" />
+    <Content Include="wwwroot\images\Contact\CorporateTitle_blackChina.gif" />
+    <Content Include="wwwroot\images\Contact\CorporateTitle_blackUS.gif" />
     <Content Include="wwwroot\images\Contact\DottedWide.gif" />
     <Content Include="wwwroot\images\Contact\IconReq.gif" />
     <Content Include="wwwroot\images\Contact\OrangeCap.gif" />
     <Content Include="wwwroot\images\Contact\OrangeCap2.gif" />
+    <Content Include="wwwroot\images\Contact\web-china.png" />
+    <Content Include="wwwroot\images\Contact\web-us.png" />
+    <Content Include="wwwroot\images\Contact\web.png" />
     <Content Include="wwwroot\images\Courses\1.png" />
     <Content Include="wwwroot\images\Courses\2.png" />
     <Content Include="wwwroot\images\Courses\3.png" />
@@ -298,6 +303,7 @@
     <Content Include="wwwroot\images\Home\Ben_Zhang.jpg" />
     <Content Include="wwwroot\images\Home\john_park.jpg" />
     <Content Include="wwwroot\images\Home\LIia_Yu.jpg" />
+    <Content Include="wwwroot\images\Home\logo_1.png" />
     <Content Include="wwwroot\images\Home\logo_final_1.png" />
     <Content Include="wwwroot\images\Home\logo.png" />
     <Content Include="wwwroot\images\Home\logo_final.png" />
@@ -355,6 +361,7 @@
     </Compile>
     <Compile Include="Models\Contact.cs" />
     <Compile Include="Models\Course.cs" />
+    <Compile Include="Models\EmailMessage.cs" />
     <Compile Include="Models\ErrorViewModel.cs" />
     <Compile Include="Models\Teacher.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -399,6 +406,7 @@
     <Content Include="wwwroot\lib\jquery-validation\LICENSE.md" />
     <Content Include="wwwroot\lib\jquery\.bower.json" />
     <Content Include="wwwroot\lib\jquery\dist\jquery.min.map" />
+    <Content Include="wwwroot\project.json" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -426,6 +434,7 @@
           <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
         </WebProjectProperties>
       </FlavorProperties>
+      <UserProperties wwwroot_4project_1json__JSONSchema="" />
     </VisualStudio>
   </ProjectExtensions>
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
