@@ -233,22 +233,39 @@ pre, ul, ol, dl {
 }
 
 .about-school-bg {
-    margin-top: 80px;
+    margin-top: 65px;
     background: url(../images/About/Laelaps_Location.jpg) no-repeat 50% center;
     background-size: 80%;
-    min-height: 505px;
+    min-height: 480px;
+    margin-bottom:15px;
 }
 
 .about-list-block {
     margin-top: 30px;
     margin-bottom: 30px;
-    min-height: 400px;
+    min-height: 500px;
 }
 
 .about-msg{
-    margin-bottom:20px;
+    margin-bottom:10px;
+    min-height:30px;
+    display:block;
+    position:relative;
 }
 
+.about-msg-left{
+    display:inline-block;
+    position:relative;
+    vertical-align:top;
+}
+
+.about-msg-right {
+    display: inline-block;
+    position: relative;
+    vertical-align:top;
+    text-align:center;
+    width:70%;
+}
 
 .font-face {
     font-family: Libre Baskerville;
@@ -348,9 +365,9 @@ pre, ul, ol, dl {
 
 .div-child-img {
     position: absolute;
-    top: 70%;
-    width: 50%;
-    max-width: 200px;
+    top: 75%;
+    width: 35%;
+    max-width: 80px;
 }
 
 .div-child-text-top {

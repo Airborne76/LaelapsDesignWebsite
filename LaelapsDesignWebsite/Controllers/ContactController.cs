@@ -36,7 +36,7 @@ namespace LaelapsDesignWebsite.Controllers
                 string message = sb.ToString();
                 if (MailService.GetInstance().SendMail(message))
                 {
-                    ViewData["msg"] = "Message send";
+                    ViewData["msg"] = "Message has been send";
                     return View("Index");
                 }
                 else

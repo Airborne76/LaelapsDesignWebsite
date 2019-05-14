@@ -3,7 +3,7 @@
 }
 
 <nav class="navbar-default secondary-navbar position-sticky title-center">              
-            <ul id="myTab" class="nav navbar-nav text-uppercase" style="margin:20px 0 0 0;width:100%">
+            <ul id="myTab" class="nav navbar-nav text-uppercase" style="margin:10px 0 0 0;width:100%">
                 <li class="active navbar-li-left">
                     <a data-toggle="tab" aria-expanded="true" href="#About-Laelaps" class="about-tab">About  Laelaps</a>
                 </li>
@@ -58,24 +58,24 @@
                                     <div>
                                         <h1 class="font-face text-center">@item.Name</h1>
                                         <p class="about-msg">
-                                            <b>Current:</b>
-                                            <span class="font-msg">@item.Current</span>
-                                            
+                                            <b class="about-msg-left">Current:</b>
+                                            <span class="font-msg about-msg-right">@item.Current</span>
+
                                         </p>
-                                        <p class="about-msg">
-                                            @if (!string.IsNullOrEmpty(item.Education))
-                                            {
-                                                <b>Education:</b>
-                                                <span class="font-msg">@item.Education</span> 
-                                            }
-                                        </p>
-                                        <p class="about-msg">
-                                            @if (!string.IsNullOrEmpty(item.Previous))
-                                            {
-                                                <b>Previous:</b>
-                                                <span class="font-msg">@item.Previous</span>
-                                            }
-                                        </p>                                            
+                                        @if (!string.IsNullOrEmpty(item.Education))
+                                        {
+                                            <p class="about-msg">
+                                                <b class="about-msg-left">Education:</b>
+                                                <span class="font-msg about-msg-right">@item.Education</span>
+                                            </p>
+                                        }
+                                        @if (!string.IsNullOrEmpty(item.Previous))
+                                        {
+                                            <p class="about-msg">                                                
+                                                <b class="about-msg-left">Previous:</b>
+                                                <span class="font-msg about-msg-right">@item.Previous</span>                                                
+                                            </p>
+                                        }
                                     </div>
                                 </article>
                             </div>
