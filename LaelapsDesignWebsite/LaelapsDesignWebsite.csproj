@@ -117,7 +117,6 @@
     <Content Include="wwwroot\images\About\MitchAseltine.jpg" />
     <Content Include="wwwroot\images\About\PaulKwon.jpg" />
     <Content Include="wwwroot\images\About\QiuFang.JPG" />
-    <Content Include="wwwroot\images\Contact\CorporateTitle.gif" />
     <Content Include="wwwroot\images\Contact\CorporateTitle2_black.gif" />
     <Content Include="wwwroot\images\Contact\CorporateTitle_black.gif" />
     <Content Include="wwwroot\images\Contact\CorporateTitle_black2.gif" />
@@ -130,7 +129,6 @@
     <Content Include="wwwroot\images\Contact\OrangeCap2.gif" />
     <Content Include="wwwroot\images\Contact\web-china.png" />
     <Content Include="wwwroot\images\Contact\web-us.png" />
-    <Content Include="wwwroot\images\Contact\web.png" />
     <Content Include="wwwroot\images\Courses\1.png" />
     <Content Include="wwwroot\images\Courses\2.png" />
     <Content Include="wwwroot\images\Courses\3.png" />

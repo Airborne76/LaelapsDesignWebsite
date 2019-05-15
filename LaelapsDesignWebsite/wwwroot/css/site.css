@@ -257,13 +257,14 @@ pre, ul, ol, dl {
     display:inline-block;
     position:relative;
     vertical-align:top;
+    width:25%;
 }
 
 .about-msg-right {
     display: inline-block;
     position: relative;
     vertical-align:top;
-    text-align:center;
+    text-align:left;
     width:70%;
 }
 
@@ -367,7 +368,7 @@ pre, ul, ol, dl {
     position: absolute;
     top: 75%;
     width: 35%;
-    max-width: 80px;
+    max-width: 60px;
 }
 
 .div-child-text-top {
