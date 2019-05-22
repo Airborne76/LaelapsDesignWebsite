@@ -26,6 +26,10 @@ a {
     text-decoration: none;
     line-height: 2em
 }
+.tab-head{
+    padding-top:20px !important;
+    padding-bottom:20px !important;
+}
 
 a:hover {
     color: #60a5dd;
@@ -159,7 +163,7 @@ pre, ul, ol, dl {
 
 /*Courses Page*/
 .content-inner {
-    padding: 20px 8% 100px
+    padding: 20px 8% 0px
 }
 
 .pic-inner {
@@ -242,8 +246,8 @@ pre, ul, ol, dl {
 
 .about-list-block {
     margin-top: 30px;
-    margin-bottom: 30px;
-    min-height: 500px;
+    margin-bottom: 0px;
+    /*min-height: 500px;*/
 }
 
 .about-msg{
@@ -429,8 +433,8 @@ pre, ul, ol, dl {
     font-size: 48px;
     font-weight: 600;
     font-style: normal;
-    margin-top: 80px;
-    margin-bottom: 50px;
+    margin-top: 60px;
+    margin-bottom: 25px;
 }
 
 /*GALLERY*/
