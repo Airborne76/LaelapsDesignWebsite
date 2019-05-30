@@ -34,14 +34,15 @@ namespace LaelapsDesignWebsite.Controllers
                 sb.Append($"phone: {model.phone}. <br />");
                 sb.Append($"questions: {model.questions}. <br />");
                 string message = sb.ToString();
-                if (MailService.GetInstance().SendMail(message))
+                string errMessage;
+                if (MailService.GetInstance().SendMail(message,out errMessage))
                 {
                     ViewData["msg"] = "Message has been send";
                     return View("Index");
                 }
                 else
                 {
-                    ViewData["msg"] = "Error: Please try later";
+                    ViewData["msg"] = $"Error:{errMessage}"; 
                     return View("Index");
                 }                
             }

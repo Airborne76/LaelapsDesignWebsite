@@ -15,7 +15,7 @@
     <AssemblyName>LaelapsDesignWebsite</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
-    <Use64BitIISExpress />
+    <Use64BitIISExpress>false</Use64BitIISExpress>
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
@@ -368,7 +368,6 @@
     <Compile Include="Controllers\CoursesController.cs" />
     <Compile Include="Controllers\GalleryController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\MailController.cs" />
     <Compile Include="Controllers\OutSourcingController.cs" />
     <Compile Include="Controllers\PortfolioPrepController.cs" />
     <Compile Include="Global.asax.cs">
@@ -385,6 +384,7 @@
   <ItemGroup>
     <Content Include="Views\web.config" />
     <Content Include="bundleconfig.json" />
+    <Content Include="Mail.json" />
     <None Include="packages.config" />
     <Content Include="Views\About\Index.cshtml" />
     <Content Include="Views\Contact\Index.cshtml" />
@@ -401,7 +401,6 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <None Include="Properties\PublishProfiles\CustomProfile1.pubxml" />
-    <Content Include="Views\Mail\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

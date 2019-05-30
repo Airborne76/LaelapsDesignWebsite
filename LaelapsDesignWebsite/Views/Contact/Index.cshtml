@@ -369,9 +369,17 @@
 @section Scripts{
     <script type="text/javascript">
         $(function () {
-            if ('@ViewData["msg"].ToString()'!== '') {
+            if ('@ViewData["msg"].ToString()' !== '') {
                 var msg = '@ViewData["msg"].ToString()';
-                alert(msg);                
+                if (msg.charAt(0) == 'E') {
+                    console.log(msg);
+                    alert("Error:please try later"); 
+                }
+                else {
+                    alert(msg); 
+                }
+
+                               
             }
             $(".rightpane").height($(".row").height());
 
