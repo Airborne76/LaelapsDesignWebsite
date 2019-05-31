@@ -74,8 +74,9 @@ namespace LaelapsDesignWebsite.Services
                 using (var client = new SmtpClient())
                 {
                     client.ServerCertificateValidationCallback = (s, c, h, e) => true;
-                    client.Connect(emailMessage.SMTP, emailMessage.Port, false);
-                    client.Authenticate(emailMessage.From, emailMessage.Password);
+                    client.Connect("relay-hosting.secureserver.net", 25, false);
+                   
+                    //client.Authenticate(emailMessage.From, emailMessage.Password);
                     //client.Authenticate("qweasdz76@live.com", "qwe12345as123");
                     client.Send(message);
                     client.Disconnect(true);                    
